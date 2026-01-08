@@ -1,0 +1,9 @@
+#!/bin/sh
+# Check for secrets in staged files
+staged_files=$(git diff --name-only --cached --diff-filter=ACMR)
+if [ -n "$staged_files" ]; then
+  echo "$staged_files" | xargs npx secretlint
+fi
+
+# Run other linters
+npx lint-staged

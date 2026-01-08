@@ -1,0 +1,43 @@
+---
+import "@/styles/global.css";
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "Dong Ming", description = "Personal site of Dong Ming" } =
+  Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header class="mx-auto max-w-3xl px-4 py-8">
+      <nav class="flex justify-between items-center">
+        <a href="/" class="text-xl font-bold">TBDong</a>
+        <div class="space-x-4">
+          <a href="/posts">Posts</a>
+          <a href="/about">About</a>
+          <a href="/search">Search</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="mx-auto max-w-3xl px-4 py-8 mt-auto text-sm text-muted-foreground">
+      <p>&copy; {new Date().getFullYear()} Dong Ming</p>
+    </footer>
+  </body>
+</html>

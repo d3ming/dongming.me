@@ -1,0 +1,7 @@
+# AI Agent Ignore File
+# This file controls what AI agents (Gemini, Claude, Codex) can see
+# Files/folders listed here are hidden from AI agents but still tracked by git
+
+# Note: .refs is in .gitignore but NOT here, so AI agents can still access it
+!.refs
+!.refs/**

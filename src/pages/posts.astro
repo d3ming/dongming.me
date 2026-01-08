@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+
+const posts = await getCollection("blog", ({ data }) => !data.draft);
+posts.sort(
+  (a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime(),
+);
+---
+
+<Layout title="Posts | Dong Ming">
+  <section class="py-12">
+    <h1 class="text-3xl font-bold mb-8">Posts</h1>
+    <ul class="space-y-8">
+      {posts.map(post => (
+        <li>
+          <a href={`/posts/${post.id}`} class="group">
+            <h2 class="text-xl font-bold group-hover:text-accent group-hover:underline decoration-wavy underline-offset-4">
+              {post.data.title}
+            </h2>
+            <div class="text-sm text-muted mt-1">
+              {post.data.pubDatetime.toLocaleDateString("en-US", {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              })}
+            </div>
+            <p class="mt-2 text-muted-foreground">{post.data.description}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+    {posts.length === 0 && <p class="text-muted">No posts yet.</p>}
+  </section>
+</Layout>

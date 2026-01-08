@@ -1,0 +1,34 @@
+# LOCAL REFS
+.refs
+**.local**
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Production build
+dist
+
+# Astro
+.astro
+
+# Environment
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / Editor
+.DS_Store
+.vscode
+.idea
+*.suo
+*.ntvs
+*.njsproj
+*.sln
+*.sw?

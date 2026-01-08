@@ -1,0 +1,41 @@
+{
+  "name": "dongming-me",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "astro": "astro",
+    "sync": "astro sync",
+    "lint": "biome lint src",
+    "lint:fix": "biome lint --write src",
+    "format": "biome format --write src",
+    "check": "biome check src",
+    "check:fix": "biome check --write src",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/rss": "^4.0.14",
+    "@astrojs/sitemap": "^3.6.0",
+    "@pagefind/default-ui": "^1.4.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.6",
+    "pagefind": "^1.4.0",
+    "reading-time": "^1.5.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.10",
+    "@secretlint/quick-start": "^11.2.5",
+    "@tailwindcss/typography": "^0.5.19"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,astro,json}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
+  }
+}
