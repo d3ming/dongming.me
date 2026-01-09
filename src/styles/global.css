@@ -5,19 +5,21 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --accent: #0066cc;
+  --muted: #f3f4f6;
+  --muted-foreground: #666666;
+  --border: #e5e7eb;
 }
 
 html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --muted: #343f60bf;
-  --border: #ab4b08;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --accent: #3b82f6;
+  --muted: #1a1a1a;
+  --muted-foreground: #a1a1a1;
+  --border: #262626;
 }
 
 @theme {
@@ -25,29 +27,48 @@ html[data-theme="dark"] {
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
 }
 
 @layer base {
   * {
-    @apply border-border outline-accent/75;
+    @apply border-border outline-accent/50;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) transparent;
   }
-  
+
   html {
     @apply overflow-y-scroll scroll-smooth;
   }
-  
+
   body {
-    @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+    @apply flex min-h-svh flex-col bg-background font-mono text-foreground antialiased selection:bg-accent/20 selection:text-accent;
   }
-  
+
   a,
   button {
-    @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+    @apply transition-all duration-200 outline-offset-4 focus-visible:outline-2 focus-visible:outline-dashed;
   }
-  
+
+  header,
   section,
   footer {
-    @apply mx-auto max-w-3xl px-4;
+    @apply mx-auto w-full max-w-3xl px-6 sm:px-8;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-muted-foreground {
+    color: var(--muted-foreground);
   }
 }

@@ -1,0 +1,30 @@
+---
+title: "Codified Self @ 41"
+description: "Who I think I am... reflections of a 41yo"
+pubDatetime: 2026-01-09T13:44:00Z
+author: "Dong Ming"
+tags: ["self"]
+---
+
+# Codified Self @ 41
+
+Who am I? Better question is ... who do I think I am and am I internally consistent?
+
+One of my supposed key features is that I strive to have a high level of internal consistency. That is, what I think, what I do, what I tell others are highly aligned. Now no one can be perfectly aligned but this is what I have openly stated to those close to me many times. It's also an angle that I internally push myself towards.
+
+Another related feature is I see myself at my core as an idealist. This was most obviously demonstrated during my early years at PaperG when I first became a manager. How I wanted to run things and what I wanted to do were all idealistic borderling on the extreme. I had a hard time to see other's point of view, and that's perhaps another one of my biases.
+
+Over the years what I gather through reflection is a list of biases which I suffer from and I try to be at least aware of them.
+
+I would write more, and I feel like I have much more to write but I want to keep this short for now, for after all, I want to overcome my perfectionist tendencies...
+
+Instead I'll embrace my tendencies to multi-task not not focus deeply. Although tbh today is one of the more focusy days for me.
+
+I just bought tbd.ong. When I was 13 my nickname for myself was TGD, it stood for The Great Dong. Then this week on a whim as I was thinking about what to call this new blog I wanted to start, I landed on TBD. It's multi-leveled joke:
+- TBD: to be determined
+- TBD: one letter off from TGD, the _bad_ Dong? the _bold_ Dong?
+- TBD: To Be Dong
+
+That is what this blog is about, as I embrace another of my tendencies... self importance and overly self reflective.
+
+I'll end with this - I believe the universe if ever present, observing and willing to help. I believe that by improving myself I am carring out, in a small part, the universe's will.

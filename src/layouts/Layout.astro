@@ -1,13 +1,18 @@
 ---
 import "@/styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
 
 export interface Props {
   title?: string;
   description?: string;
 }
 
-const { title = "Dong Ming", description = "Personal site of Dong Ming" } =
-  Astro.props;
+const {
+  title = "TBD | Dong Ming",
+  description = "To Be Dong - Personal site of Dong Ming",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -21,23 +26,41 @@ const { title = "Dong Ming", description = "Personal site of Dong Ming" } =
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
+    <ClientRouter />
+
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+        return 'light';
+      })();
+
+      if (theme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+
+      window.localStorage.setItem('theme', theme);
+
+      document.addEventListener('astro:after-swap', () => {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      });
+    </script>
   </head>
-  <body>
-    <header class="mx-auto max-w-3xl px-4 py-8">
-      <nav class="flex justify-between items-center">
-        <a href="/" class="text-xl font-bold">TBDong</a>
-        <div class="space-x-4">
-          <a href="/posts">Posts</a>
-          <a href="/about">About</a>
-          <a href="/search">Search</a>
-        </div>
-      </nav>
-    </header>
-    <main>
+  <body class="flex flex-col min-h-screen bg-background text-foreground font-mono antialiased selection:bg-accent/20 selection:text-accent">
+    <Header />
+    <main class="flex-grow">
       <slot />
     </main>
-    <footer class="mx-auto max-w-3xl px-4 py-8 mt-auto text-sm text-muted-foreground">
-      <p>&copy; {new Date().getFullYear()} Dong Ming</p>
-    </footer>
+    <Footer />
   </body>
 </html>

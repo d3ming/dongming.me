@@ -31,7 +31,9 @@
   "devDependencies": {
     "@biomejs/biome": "^2.3.10",
     "@secretlint/quick-start": "^11.2.5",
-    "@tailwindcss/typography": "^0.5.19"
+    "@tailwindcss/typography": "^0.5.19",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11"
   },
   "lint-staged": {
     "*.{js,ts,tsx,astro,json}": [
