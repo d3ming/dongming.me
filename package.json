@@ -13,7 +13,7 @@
     "format": "biome format --write src",
     "check": "biome check src",
     "check:fix": "biome check --write src",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",

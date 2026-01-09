@@ -4,15 +4,6 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root,
-html[data-theme="light"] {
-  --background: #ffffff;
-  --foreground: #1a1a1a;
-  --accent: #0066cc;
-  --muted: #f3f4f6;
-  --muted-foreground: #666666;
-  --border: #e5e7eb;
-}
-
 html[data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #ededed;
@@ -20,6 +11,15 @@ html[data-theme="dark"] {
   --muted: #1a1a1a;
   --muted-foreground: #a1a1a1;
   --border: #262626;
+}
+
+html[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --accent: #0066cc;
+  --muted: #f3f4f6;
+  --muted-foreground: #666666;
+  --border: #e5e7eb;
 }
 
 @theme {

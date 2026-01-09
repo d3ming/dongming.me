@@ -1,10 +1,95 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import "@pagefind/default-ui/css/ui.css";
 ---
 
 <Layout title="Search | TBD">
   <section class="py-12">
     <h1 class="text-3xl font-bold mb-8 tracking-tight italic">Search</h1>
-    <p class="text-muted-foreground italic">Search functionality powered by Pagefind will be implemented soon.</p>
+
+    <div id="pagefind-search" class="min-h-[300px]" transition:persist></div>
   </section>
 </Layout>
+
+<script>
+  function initSearch() {
+    const pageFindSearch = document.querySelector("#pagefind-search");
+    if (!pageFindSearch) return;
+
+    // Wait for idle to avoid blocking main thread
+    window.requestIdleCallback(async () => {
+      // @ts-expect-error — Missing types for @pagefind/default-ui package.
+      const { PagefindUI } = await import("@pagefind/default-ui");
+
+      if (import.meta.env.DEV && !pageFindSearch.querySelector(".pagefind-ui__search-input")) {
+        pageFindSearch.innerHTML = `
+            <div class="bg-muted p-4 border border-border rounded mb-8 font-mono text-sm">
+              <p class="font-bold mb-2">DEV Mode Warning</p>
+              <p>Search results only appear after a production build. Run:</p>
+              <code class="block mt-2 bg-black text-white p-2 rounded">make build</code>
+            </div>
+          `;
+      }
+
+      new PagefindUI({
+        element: "#pagefind-search",
+        showSubResults: true,
+        showImages: false,
+        translations: {
+          placeholder: "Search posts, snippets, ideas...",
+        },
+      });
+
+      // Auto-focus the search input
+      const searchInput = document.querySelector(".pagefind-ui__search-input") as HTMLInputElement;
+      if (searchInput) {
+        searchInput.focus();
+      }
+    });
+  }
+
+  // Initialize on first load
+  initSearch();
+
+  // Re-initialize after view transitions
+  document.addEventListener("astro:after-swap", initSearch);
+</script>
+
+<style is:global>
+  #pagefind-search {
+    --pagefind-ui-font: "JetBrains Mono", "Fira Code", monospace;
+    --pagefind-ui-text: var(--foreground);
+    --pagefind-ui-background: var(--background);
+    --pagefind-ui-border: var(--border);
+    --pagefind-ui-primary: var(--accent);
+    --pagefind-ui-tag: var(--muted);
+
+    .pagefind-ui__search-input {
+      @apply font-mono text-base border-border bg-background/50 focus:bg-background transition-colors;
+    }
+
+    .pagefind-ui__result-title {
+      @apply font-bold tracking-tight;
+    }
+
+    .pagefind-ui__result-link {
+      @apply text-accent hover:underline decoration-accent/30 underline-offset-4;
+    }
+
+    .pagefind-ui__message {
+      @apply font-mono text-sm text-muted-foreground;
+    }
+
+    .pagefind-ui__result-excerpt {
+      @apply font-mono text-sm leading-relaxed;
+    }
+
+    .pagefind-ui__result {
+      @apply border-border py-6;
+    }
+
+    .pagefind-ui__search-clear {
+      @apply bg-muted hover:bg-accent hover:text-white transition-colors;
+    }
+  }
+</style>
