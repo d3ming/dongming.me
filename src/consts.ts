@@ -4,7 +4,7 @@ export const SITE = {
   profile: "https://tbd.ong/about",
   desc: "TBD - To Be Dong. Personal site of Dong Ming. Engineering crisp, fast, and opinionated systems.",
   title: "TBD | Dong Ming",
-  ogImage: "og.png",
+  ogImage: "avatar.jpg",
   lang: "en",
 };
 
