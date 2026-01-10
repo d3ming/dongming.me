@@ -3,23 +3,61 @@
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+/* ============================================
+   DESIGN PLAYGROUND - Purple Color Variants
+   ============================================
+   Uncomment ONE variant below to try it out!
+   All variants are WCAG AA compliant.
+   ============================================ */
+
 :root,
 html[data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --accent: #3b82f6;
   --muted: #1a1a1a;
   --muted-foreground: #a1a1a1;
   --border: #262626;
+
+  /* 🎨 VARIANT A: Vibrant Royal (ACTIVE - Recommended) */
+  /* Energetic, modern, excellent contrast */
+  --accent: #A855F7;
+  --accent-hover: #C084FC;
+  --accent-muted: #7C3AED;
+
+  /* 🎨 VARIANT B: Deep Regal (Uncomment to try) */
+  /* Sophisticated, premium, refined */
+  /* --accent: #7C3AED; */
+  /* --accent-hover: #A78BFA; */
+  /* --accent-muted: #5B21B6; */
+
+  /* 🎨 VARIANT C: Bright Fuchsia (Uncomment to try) */
+  /* Playful, creative, bold */
+  /* --accent: #C084FC; */
+  /* --accent-hover: #E879F9; */
+  /* --accent-muted: #A855F7; */
 }
 
 html[data-theme="light"] {
   --background: #ffffff;
   --foreground: #1a1a1a;
-  --accent: #0066cc;
   --muted: #f3f4f6;
   --muted-foreground: #666666;
   --border: #e5e7eb;
+
+  /* 🎨 VARIANT A: Vibrant Royal (ACTIVE - Recommended) */
+  --accent: #9333EA;
+  --accent-hover: #7C3AED;
+  --accent-muted: #A855F7;
+
+  /* 🎨 VARIANT B: Deep Regal (Uncomment to try) */
+  /* --accent: #7E22CE; */
+  /* --accent-hover: #6D28D9; */
+  /* --accent-muted: #7C3AED; */
+
+  /* 🎨 VARIANT C: Bright Fuchsia (Uncomment to try) */
+  /* --accent: #A855F7; */
+  /* --accent-hover: #C084FC; */
+  /* --accent-muted: #D946EF; */
 }
 
 @theme {
@@ -70,5 +108,23 @@ html[data-theme="light"] {
 @layer utilities {
   .text-muted-foreground {
     color: var(--muted-foreground);
+  }
+
+  /* Terminal cursor blink animation */
+  @keyframes blink {
+
+    0%,
+    49% {
+      opacity: 1;
+    }
+
+    50%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s step-end infinite;
   }
 }

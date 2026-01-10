@@ -7,50 +7,50 @@ import Layout from "@/layouts/Layout.astro";
 
 const posts = await getCollection("blog");
 const latestPosts = posts
+  .filter((p) => !p.data.draft && !p.data.private)
   .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime())
   .slice(0, 3);
 ---
 
 <Layout>
-  <section class="py-12">
-    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-12">
-      <div class="w-32 h-32 rounded-2xl bg-accent/10 border-2 border-accent/20 flex items-center justify-center flex-shrink-0 rotate-3 hover:rotate-0 transition-all duration-500 overflow-hidden group">
-        <img src="/avatar.jpg" alt="Dong Ming" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
-      </div>
-      <div class="flex-1 text-center sm:text-left">
-        <h1 class="text-3xl font-bold mb-4 tracking-tight">
-          Hi, I'm <a href="https://x.com/dming" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline decoration-accent/30 decoration-2 underline-offset-4">@dming</a>.
-        </h1>
-        <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
-          I'm a software engineer focused on building high-signal, low-noise applications.
-          I value performance, accessibility, and clean code.
-        </p>
-        <Socials />
-      </div>
-    </div>
+<section class="py-12">
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-12">
+<div class="w-32 h-32 rounded-2xl bg-accent/10 border-2 border-accent/20 flex items-center justify-center flex-shrink-0 rotate-3 hover:rotate-0 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] transition-all duration-500 overflow-hidden group">
+<img src="/avatar.jpg" alt="Dong Ming" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+</div>
+<div class="flex-1 text-center sm:text-left">
+<h1 class="text-3xl font-bold mb-4 tracking-tight">
+Hi, I'm <a href="https://x.com/dming" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline decoration-accent/30 decoration-2 underline-offset-4">@dming</a>.
+</h1>
+<p class="text-lg text-muted-foreground mb-6 leading-relaxed">
+Iterating daily. <span class="text-accent font-medium">To Be Determined.</span>
+</p>
+<Socials />
+</div>
+</div>
 
-    <Hr />
+<Hr />
 
-    <div class="mt-16">
-      <div class="flex items-baseline justify-between mb-8">
-        <h2 class="text-xl font-bold tracking-tight uppercase text-muted-foreground">Latest Writing</h2>
-        <a href="/posts" class="text-xs font-mono hover:text-accent transition-colors underline underline-offset-4">View All</a>
-      </div>
+<div class="mt-16">
+<div class="flex items-baseline justify-between mb-8">
+<h2 class="text-xl font-bold tracking-tight uppercase text-muted-foreground">Latest Writing</h2>
+<a href="/posts" class="text-xs font-mono hover:text-accent transition-colors underline underline-offset-4">View All</a>
+</div>
 
-      {latestPosts.length > 0 ? (
-        <ul class="divide-y divide-border">
-          {latestPosts.map((post) => (
-            <Card
-              href={`/posts/${post.id}`}
-              title={post.data.title}
-              description={post.data.description}
-              pubDate={post.data.pubDatetime}
-            />
-          ))}
-        </ul>
-      ) : (
-        <p class="text-muted-foreground italic">No posts yet. Stay tuned for updates.</p>
-      )}
-    </div>
-  </section>
+{latestPosts.length > 0 ? (
+<ul class="divide-y divide-border">
+{latestPosts.map((post) => (
+<Card
+href={`/posts/${post.id}`}
+title={post.data.title}
+description={post.data.description}
+pubDate={post.data.pubDatetime}
+/>
+))}
+</ul>
+) : (
+<p class="text-muted-foreground italic">No posts yet. Stay tuned for updates.</p>
+)}
+</div>
+</section>
 </Layout>
