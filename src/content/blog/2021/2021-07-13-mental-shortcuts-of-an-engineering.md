@@ -1,0 +1,13 @@
+---
+title: "Mental Shortcuts Of An Engineering"
+description: ""
+pubDatetime: 2021-07-13T12:00:00.000Z
+author: "Dong Ming"
+tags: ["substack", "mingdom-moment"]
+draft: true
+slug: "20210713-mental-shortcuts-of-an-engineering"
+canonicalURL: "https://mingdom.substack.com/p/20210713-mental-shortcuts-of-an-engineering"
+---
+
+> This post was originally published on [Substack](https://mingdom.substack.com/p/20210713-mental-shortcuts-of-an-engineering).
+

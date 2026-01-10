@@ -8,9 +8,10 @@
     "preview": "astro preview",
     "astro": "astro",
     "sync": "astro sync",
-    "lint": "npm run seo-lint && biome check src",
-    "check": "npm run lint",
-    "check:fix": "biome check --write src",
+    "lint": "npm run fix:posts && biome check --write src",
+    "check": "npm run lint && npm run seo-lint",
+    "check:fix": "npm run fix:posts && biome check --write src",
+    "fix:posts": "node scripts/reorganize-posts.mjs",
     "seo-lint": "node scripts/seo-lint.mjs",
     "prepare": "husky || true"
   },

@@ -12,9 +12,10 @@ help:
 	@echo "Available commands:"
 	@echo "  make install  - Install dependencies"
 	@echo "  make dev      - Start development server"
-	@echo "  make build    - Build production site and search index"
+	@echo "  make build    - Build production site"
 	@echo "  make preview  - Preview production build"
-	@echo "  make lint     - Run all quality checks (SEO + Code + Formatting)"
+	@echo "  make lint     - Core quality checks (Mandatory for commit)"
+	@echo "  make check    - Full quality & SEO checks (Advisory)"
 	@echo "  make clean    - Remove build artifacts"
 
 install:
@@ -31,6 +32,9 @@ preview:
 
 lint:
 	$(NPM) run lint
+
+check:
+	$(NPM) run check
 
 clean:
 	rm -rf $(BUILD_DIR)

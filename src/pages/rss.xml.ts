@@ -4,7 +4,10 @@ import type { APIContext } from "astro";
 import { SITE } from "@/consts";
 
 export async function GET(context: APIContext) {
-  const posts = await getCollection("blog");
+  const posts = await getCollection(
+    "blog",
+    ({ data }) => !data.draft && !data.private,
+  );
   if (!context.site) {
     throw new Error("Site URL is not configured in astro.config.mjs");
   }

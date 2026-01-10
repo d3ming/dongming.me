@@ -73,12 +73,21 @@ function parseFrontmatter(content) {
     return frontmatter;
 }
 
+async function getFiles(dir) {
+    const dirents = await readdir(dir, { withFileTypes: true });
+    const files = await Promise.all(dirents.map((dirent) => {
+        const res = join(dir, dirent.name);
+        return dirent.isDirectory() ? getFiles(res) : res;
+    }));
+    return files.flat();
+}
+
 async function lintContent() {
     console.log("🔍 Running SEO content linter...\n");
 
     try {
-        const files = await readdir(BLOG_DIR);
-        const mdFiles = files.filter(f => f.endsWith(".md") || f.endsWith(".mdx"));
+        const allFiles = await getFiles(BLOG_DIR);
+        const mdFiles = allFiles.filter(f => f.endsWith(".md") || f.endsWith(".mdx"));
 
         if (mdFiles.length === 0) {
             console.log("ℹ️  No blog posts found to lint.");
@@ -87,9 +96,9 @@ async function lintContent() {
 
         console.log(`Found ${mdFiles.length} post(s) to validate.\n`);
 
-        for (const file of mdFiles) {
-            const postId = file.replace(/\.(md|mdx)$/, "");
-            const filePath = join(BLOG_DIR, file);
+        for (const filePath of mdFiles) {
+            const fileName = filePath.replace(BLOG_DIR + "/", "");
+            const postId = fileName.replace(/\.(md|mdx)$/, "");
             const content = await readFile(filePath, "utf-8");
             const data = parseFrontmatter(content);
 

@@ -3,29 +3,85 @@ import { getCollection } from "astro:content";
 import Card from "@/components/Card.astro";
 import Layout from "@/layouts/Layout.astro";
 
-const posts = await getCollection("blog", ({ data }) => !data.draft);
-posts.sort(
-  (a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime(),
-);
+const allPosts = await getCollection("blog");
+
+const published = allPosts
+  .filter((p) => !p.data.draft && !p.data.private)
+  .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime());
+
+const drafts = allPosts
+  .filter((p) => p.data.draft)
+  .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime());
+
+const privatePosts = allPosts
+  .filter((p) => p.data.private)
+  .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime());
+
+const isDev = import.meta.env.DEV;
 ---
 
 <Layout title="Posts | TBD">
-  <section class="py-12">
-    <h1 class="text-3xl font-bold mb-12 tracking-tight italic">Posts</h1>
+<section class="py-12 flex flex-col gap-16">
+<!-- Published Posts -->
+<div>
+<h1 class="text-3xl font-bold mb-12 tracking-tight italic">Posts</h1>
 
-    {posts.length > 0 ? (
-      <ul class="divide-y divide-border">
-        {posts.map((post) => (
-          <Card
-            href={`/posts/${post.id}`}
-            title={post.data.title}
-            description={post.data.description}
-            pubDate={post.data.pubDatetime}
-          />
-        ))}
-      </ul>
-    ) : (
-      <p class="text-muted-foreground italic">No posts yet. Check back soon.</p>
-    )}
-  </section>
+{published.length > 0 ? (
+<ul class="divide-y divide-border">
+{published.map((post) => (
+<Card
+href={`/posts/${post.id}`}
+title={post.data.title}
+description={post.data.description}
+pubDate={post.data.pubDatetime}
+/>
+))}
+</ul>
+) : (
+<p class="text-muted-foreground italic">No posts yet. Check back soon.</p>
+)}
+</div>
+
+{isDev && (
+<>
+{/* Private Posts Section */}
+{privatePosts.length > 0 && (
+<div>
+<h2 class="text-2xl font-bold mb-8 tracking-tight italic text-accent/70">
+Private <span class="text-xs font-mono ml-2 uppercase px-1.5 py-0.5 border border-accent/30 rounded text-accent/50">Dev Only</span>
+</h2>
+<ul class="divide-y divide-border opacity-70">
+{privatePosts.map((post) => (
+<Card
+href={`/posts/${post.id}`}
+title={post.data.title}
+description={post.data.description}
+pubDate={post.data.pubDatetime}
+/>
+))}
+</ul>
+</div>
+)}
+
+{/* Drafts Section */}
+{drafts.length > 0 && (
+<div>
+<h2 class="text-2xl font-bold mb-8 tracking-tight italic text-muted-foreground/70">
+Drafts <span class="text-xs font-mono ml-2 uppercase px-1.5 py-0.5 border border-border rounded text-muted-foreground/50">Dev Only</span>
+</h2>
+<ul class="divide-y divide-border opacity-60">
+{drafts.map((post) => (
+<Card
+href={`/posts/${post.id}`}
+title={post.data.title}
+description={post.data.description}
+pubDate={post.data.pubDatetime}
+/>
+))}
+</ul>
+</div>
+)}
+</>
+)}
+</section>
 </Layout>

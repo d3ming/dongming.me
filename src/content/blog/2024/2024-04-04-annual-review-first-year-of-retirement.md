@@ -1,0 +1,171 @@
+---
+title: "Annual Review: First year of retirement"
+description: "An annual review of my first year of retirement, crushing market benchmarks, experimenting with AI agents, and setting new intentions for health and writing."
+pubDatetime: 2024-04-04T17:00:43.479Z
+author: "Dong Ming"
+tags: ["substack", "mingdom-moment"]
+draft: false
+slug: "annual-review-first-year-of-retirement"
+canonicalURL: "https://mingdom.substack.com/p/annual-review-first-year-of-retirement"
+---
+
+> This post was originally published on [Substack](https://mingdom.substack.com/p/annual-review-first-year-of-retirement).
+
+![AI generated: hero’s journey crossing mountains at dawn](https://substack-post-media.s3.amazonaws.com/public/images/cbd047f1-b66b-45e2-9fcd-976e4888d75d_512x512)
+
+It’s been over a year since my retirement!
+
+Time for an annual review of sorts. While in a reflective mood, I read through prior posts since starting this newsletter 4 years ago. Writing now to give an update on:
+
+1. The past year of retirement
+2. Thoughts on prior posts
+3. Personal goals for 2024
+
+
+
+
+## The past year in a nutshell
+
+I watched a lot of Youtube videos and played even more video games. I think I may have consumed all the interesting content available at this point. As such, I’m looking for some new challenges in 2024. *#open-to-suggestions*
+
+In all seriousness, my commentary below on prior posts should add some color to my life outside of gaming.
+
+
+## Review of prior posts
+
+Reacting to interesting parts of prior posts in reverse chronological order:
+
+
+
+
+### [April 5, 2023](https://open.substack.com/pub/mingdom/p/life-update-1-month-after-my-retirement?r=jo9k&utm_campaign=post&utm_medium=web):
+
+> [Embedded Post: Life Update: 1 month after my "retirement"](https://mingdom.substack.com/p/life-update-1-month-after-my-retirement)
+
+**On being a “professional” fund manager:**
+
+> Turning “pro” means I’m going to run my portfolio like a business and keep track of key metrics and hold myself accountable. I’m going to experiment and refine my strategy over time, and I’ve been keeping a personal journal on decisions made as well as monthly performance of my portfolio vs. SPY (the ETF tracking the S&P500 index). Happy to report that so far this year, I beat it every month - up 29% YTD vs. 6% for the SPY.
+>
+>
+
+I ended the year crushing the S&P 500 with a 72% portfolio performance. Not bad for a first year, financial freedom is secured for at least a few years, if not forever. I also started a new [Mingdom Capital](http://mingdomcapital.substack.com) letter for all things stock market & personal finance. [Subscribe](http://mingdomcapital.substack.com) if you like!
+
+**On the rise of generative AI:**
+
+> 1. Work is going to invariably change for white-collar workers. If you don’t use these tools at work, you will become obsolete.
+> 2. This is just the very beginning and we are already seeing an explosion of innovation and creative ways others use these tools.
+> 3. I need to brush up on Machine Learning, because if I ever go back to working for a company, I’d want to be working either in the ML space or be at the intersection of an industry (i.e. biotech, finance, climate, you-name-it) and ML.
+>
+>
+
+I continue to use AI chat bots on a daily basis. There are a few key players in the space all trying to compete for consumers: OpenAI, Google, Anthropic, Perplexity are the leaders. I try them all but use Google Gemini the most.
+
+ and I also played around with building an app using gen-AI and prototyped an AI agent to help research and analyze public stocks:
+
+
+
+
+## [Feb 14, 2021](https://open.substack.com/pub/mingdom/p/20210214-cryto-thoughts?r=jo9k&utm_campaign=post&utm_medium=web)
+
+> [Embedded Post: 2021.0214 - Crypto thoughts](https://mingdom.substack.com/p/20210214-cryto-thoughts)
+
+> Are we in a bubble? Probably. Despite that, in writing this post, I found enough conviction to hold for now. One change since 2017 is I’m no longer holding nearly as many AltCoins, although some of that is just by natural selection.
+>
+>
+
+Wow I almost perfectly timed the 2021 crypto top at the time of that post. BTC was around 55K then, it’s now 65K as we are near another ATH. Our views have turned a full 180, HODLERs no more. The rampant fraud at the largest two exchanges, FTX and Binance was the last straw.
+
+Although BTC is near ATH again, I have little regrets in selling. 55K to 65K in 3y is not particularly good returns, especially adjusted for risk. BTC might be just the only coin that’s worth something in the space, but how does one value it? Everything else blockchain and web3 feels like a scam to me, or “a solution in search of a problem” which likely does not exist. Don’t even get me started with NFTs.
+
+That said, I appreciate that a lot of very smart people are still bullish in the space. If you happen to be one of them, I’d love to understand why.
+
+
+
+
+## [Nov 1, 2020](https://mingdom.substack.com/p/20201101-wealth-financial-freedom)
+
+> [Embedded Post: 2020.1101 - Wealth: Financial Freedom by 2030?](https://mingdom.substack.com/p/20201101-wealth-financial-freedom)
+
+**On why financial freedom is worth it:**
+
+> Freedom is the highest level of wealth: the ability to wake up every morning and say: "I can do whatever I want today".
+>
+>
+
+I probably over-estimated how good this is. I find that the more freedom I have, the more important it is that I add some structure to my day. Put another way: *with great freedom, comes great responsibility* to choose wisely. Because the default brain mode is definitely not wise!
+
+**On timing and method:**
+
+> "Consistently compounding" are both keywords, it's a simple concept with non-obvious applications for our household:
+>
+> 1. **Lower cost of living**. The most obvious way is to move to a cheaper neighborhood. Eating out less helps too. Adding passive income also effectively lowers the cost of living.
+> 2. **Stay in the market** to let our money compound over time. We had a lot of cash from selling during the recent market highs, it's time to dollar-cost-average them back in via tools like Betterment.
+> 3. **Figure out when enough is enough.** According to the [4% rule](https://www.campfirefinance.com/4-percent-rule/) - we can retire once we can live off of 4% of our total compoundable net-worth. If our annual cost of living is 100K, we need 2.5MM in compoundable net-worth. Lowering our effective cost of living from 100K to 50K means we only need 1.25MM.
+>
+>
+
+3 years ago, I estimated that it would take 2030 to reach financial independence (FI), and that was an ambitious goal. Turns out we are way ahead of schedule and the path to it is not at all linear.
+
+**On alternate career paths before freedom**
+
+> Before reaching financial freedom, I'm starting to consider the next leg of my career in 3 different directions:
+>
+> - Product Manager - for an established company like Google where I can learn what it means to be a good PM.
+> - Cofound a company - more likely a lifestyle business that can generate passive income than a high-growth startup.
+> - Become a full-time investor - join a VC firm or become an Angel investor
+>
+> Whatever I do next, I will prioritize having higher autonomy and flexibility with my time.
+>
+>
+
+At this point, I’m not very interested in any of these career paths I listed before. I think it just goes to show that they were likely ends to means rather than anything else. For the most part, I just want to enjoy my day-to-day and I don’t think I have any strong ambitions at this point… although there are occasional flare ups.
+
+
+
+
+
+In any case, it’s another reminder that life is not a race - enjoy the journey.
+
+
+## [Sep 27, 2020](https://open.substack.com/pub/mingdom/p/mingdom-moment-20200927?r=jo9k&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+
+> [Embedded Post: 2020.0927 - Health: Revisiting "Immortality" at age 35](https://mingdom.substack.com/p/mingdom-moment-20200927)
+
+> Ultimately, I'd like to develop better habits that I can stick with for the long term. So I'm deliberately not starting all the things at once. I just became able to walk again about a month ago, so the last month has been about getting my legs to be used to walking again. I also started a daily meditation practice a little over a month ago.
+>
+>
+
+That was just after me recovering from breaking my foot after a “walk in the park”.
+
+4 years later, my health - by all measures, is not better. Developing healthy habits is way easier said than done. Getting old sure doesn’t help either.
+
+I realize that I need to take serious action to maintain or *dare-I-hope* surpass my current level of fitness going into my 40s. That just might mean giving up pork-belly.
+
+I likely just need to preserve my body in a semi-optimal state for another decade or so for AGI to arrive and cure aging. One can hope.
+
+
+
+
+### **Score Card:**
+
+- **Career Level:** Retiree I
+- **Time at Level**: 13 months
+- **Exceeded Expectations** on Wealth goals.
+- **Needs Improvement **on Health goals.
+- **Meets Expectations **on housework such as cooking and dishes.
+- **Overall:** On-track for promotion to **Retiree II **if health improves in the next 12 months assuming all other performance metrics stay the same.
+
+Of course,  gets the final say on my review and promo ;)
+
+
+
+
+## Goals for 2024
+
+Besides the health goals above, my only other goal is **writing more**.
+
+I started writing with [Obsidian](https://obsidian.md/) as daily journal at the beginning of year. Since then, I haven’t missed a single day for 90 days. It’s weird to be almost addicted to writing in this app - I find myself regularly offloading my current state-of-mind to this digital journal. It’s grown from just journals to my everything notes app, a sort of second brain.
+
+Most interestingly, just by doing this I can feel my mental health and motivation improving. It’s a profound effect and measurable effect. What I put into words, I’m much more likely to put into action. Action begets more thought, more writing and more action. A virtual cycle.
+
+Whereas the last year flew by for me in a dream-like daze (*#gaming*), I want to be more intentional with my time and savor more moments this year. Excited for what’s to come - year of the Dragon, baby!
