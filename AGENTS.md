@@ -18,4 +18,5 @@
 - **Workflow:**
   - **Git:** DO NOT USE `git` commands unless explicitly asked to do so.
   - **Testing:** Verify builds with `make build` after structural changes.
-  - **Commands:** Prefer `make` commands (e.g., `make dev`, `make check`) over raw `npm` scripts.
+  - **SEO:** Ensure blog post frontmatter follows `docs/guides/seo-best-practices.md`.
+  - **Commands:** Prefer `make` commands (e.g., `make dev`, `make lint`) over raw `npm` scripts.

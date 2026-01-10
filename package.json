@@ -8,11 +8,10 @@
     "preview": "astro preview",
     "astro": "astro",
     "sync": "astro sync",
-    "lint": "biome lint src",
-    "lint:fix": "biome lint --write src",
-    "format": "biome format --write src",
-    "check": "biome check src",
+    "lint": "npm run seo-lint && biome check src",
+    "check": "npm run lint",
     "check:fix": "biome check --write src",
+    "seo-lint": "node scripts/seo-lint.mjs",
     "prepare": "husky || true"
   },
   "dependencies": {

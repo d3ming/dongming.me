@@ -5,5 +5,8 @@ if [ -n "$staged_files" ]; then
   echo "$staged_files" | xargs npx secretlint
 fi
 
-# Run other linters
+# Run all linters (SEO + Code)
+npm run lint
+
+# Run fixers on staged files
 npx lint-staged

@@ -5,6 +5,9 @@ Personal website and newsletter for Dong Ming. Built with a focus on high perfor
 ## Documentation
 
 - [**User Guide**](docs/USER_GUIDE.md): Learn how to write posts, manage drafts, and configure the site.
+- [**SEO Best Practices**](docs/guides/seo-best-practices.md): Technical SEO setup and optimization tips.
+- [**SEO Linting**](docs/guides/seo-linting.md): Automated validation of blog post metadata.
+- [**Content Migration**](docs/guides/content-migration.md): Moving content from Medium, Substack, and Beehiiv.
 
 ## Development
 
@@ -15,8 +18,8 @@ make install
 # Start development server
 make dev
 
-# Lint and check code quality
-make check
+# Run all quality checks (SEO + Code + Formatting)
+make lint
 ```
 
 ## Building for Production
