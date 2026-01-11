@@ -1,6 +1,30 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://tbd.ong/$1",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "dongming.me"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://tbd.ong/$1",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "www.dongming.me"
+        }
+      ]
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

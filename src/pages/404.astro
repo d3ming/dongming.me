@@ -1,0 +1,34 @@
+---
+import Hr from "@/components/Hr.astro";
+import Layout from "@/layouts/Layout.astro";
+
+const title = "404 - Not Found | TBD";
+const description = "The page you are looking for does not exist.";
+---
+
+<Layout title={title} description={description}>
+<section class="py-24 text-center">
+<h1 class="text-6xl font-bold mb-4 tracking-tighter text-accent">404</h1>
+<p class="text-xl text-muted-foreground mb-8">Page Not Found</p>
+
+<Hr />
+
+<div class="mt-12">
+<p class="text-muted-foreground mb-8 leading-relaxed">
+The page you're looking for was moved, removed, <br class="hidden sm:block" />
+or never existed in the first place.
+</p>
+
+<a
+href="/"
+class="inline-block px-8 py-3 bg-accent text-accent-foreground font-bold rounded-lg hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all duration-300 transform hover:-translate-y-0.5"
+>
+Go Home
+</a>
+</div>
+
+<div class="mt-16 text-mono text-xs text-muted-foreground opacity-50">
+[ ERR_PAGE_NOT_FOUND ]
+</div>
+</section>
+</Layout>
