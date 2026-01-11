@@ -1,0 +1,201 @@
+---
+title: "Investment Principles"
+description: "and thoughts on the current market"
+pubDatetime: 2024-04-13T00:27:10.000Z
+author: "Dong Ming"
+heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/fc62ce9b-eea1-44d3-978e-2f5df261b25f/stoic-principles.jpeg?t=1713057121"
+tags:
+  - investing; mingdom-capital
+---
+
+_This is sort of a 2-for-1 post as I’m consolidating from Substack to Beehiiv:_
+
+1.  A repost from April 2, 2024: [Investment Principles, 2024 edition](https://mingdomcapital.substack.com/p/investment-principles-2024-edition?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles):
+    
+    1.  [Avoid Risk of Ruin](#principle-1-avoid-risk-of-ruin)
+        
+    2.  [Concentrating on Quality & Competence](#principle-2-concentrating-on-qualit)
+        
+    3.  [Master the Cycles of Market & Mind](#principle-3-master-the-cycles-of-ma)
+        
+2.  [Current (April 10th, 2024) thoughts on the stock market and my next steps](#current-thoughts-on-the-market-2024)
+    
+
+# Investment Principles
+
+In [A New Hope](https://mingdomcapital.substack.com/p/a-new-hope?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles), I wrote about my journey towards financial freedom and reviewed my portfolio’s stellar 2023 returns of +72%. While I’m grateful, I know luck played a role - and I’m not expecting the same performance for 2024.
+
+With the market breaking all-time-highs, I want to take a moment to reflect on my learnings over the last few years. The goal is to not get swept away with euphoria and FOMO like in late 2021.
+
+These principles are the foundation from which I _ideally_ make most of my investment decisions. Hopefully writing these down will reinforce them in my mind and serve as an accountability check to investors of _Mingdom Capital_ (chiefly my wife), and my handful of readers.
+
+## Principle 1: Avoid Risk of Ruin
+
+This one is first because it’s the most important.
+
+Imagine working hard and achieving a 15% return for 5 years (better than S&P), only to have one bad year of 50% loss. All your gains would have been wiped away and you’d be right back at square one.
+
+While it’s obvious that smaller losses are easy to recover compared to large, the magnitude of this effect can be shocking:
+
+*   10% loss requires 11% to recover
+    
+*   25% loss requires 33%
+    
+*   50% loss requires 100%
+    
+*   75% loss requires 300%
+    
+*   90% loss requires 900%!
+    
+
+As you can see, larger losses beyond ~25% quickly gets harder to recover and should be avoided at all cost.
+
+How? I want to explore this topic in a future post but sharing some quick thoughts:
+
+1.  Asset allocation - enough diversification in different types of asset. Alter asset mix based on current market situation.
+    
+2.  Hedging strategy - using options and other instruments to provide downside protection and asymmetric payoff in the event of a major negative event.
+    
+
+## Principle 2: Concentrating on Quality & Competence
+
+In the [Berkshire Hathaway 2023 annual letter](https://www.berkshirehathaway.com/letters/2023ltr.pdf?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles), Warren Buffett recounts an exchange with the late Charlie Munger:
+
+Warren, forget about ever buying another company like Berkshire. But now that you control Berkshire, add to it _**wonderful businesses purchased at fair prices and give up buying fair businesses at wonderful prices**_.
+
+ 
+
+Charlie Munger
+
+Apparently, it took Warren some time to be convinced that buying wonderful companies at a fair price is better than buying fair companies at a wonderful price.
+
+I can relate, as some of my biggest mistakes of the last decade are mistakes of omission. Either I didn’t buy something because it looked expensive, or I fully sold out of a position only to see it continue to rise and beat expectations time and again. But high quality companies tend to justify their premiums by continuing to outperform over time.
+
+The most painful example from recent memory was not buying Nvidia (NVDA) in 2022. It was on my watchlist, I had studied nVidia extensively, I had friends who are experts in AI/ML hint strongly at their dominance in ML, and I knew Jensen Huang was an amazing leader! But I convinced myself that it was just a little too expensive, and that maybe it will fall just a little more. It didn’t help that NVDA was one of the first stocks I owned back in 2010, so I had this psychological set point for what the stock used to trade at, which heavily biased me to consider its current price too high.
+
+Today, I’m more willing to pay a premium to buy a quality company and I’m better at holding onto at least a portion of a position that have run up. Still, I’m nowhere near as able as the likes of Warren Buffet or Bill Ackman in holding onto winners for the long term. Buffett for example has to 50% of his [$374B fund](https://hedgefollow.com/funds/Berkshire+Hathaway?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) in one stock - AAPL! _:mindblown:_
+
+Besides quality, I try to select companies that are within my **circle of competence** - borrowing from [Buffett](https://www.youtube.com/watch?v=2oSAcfwXExQ&utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) again. That means my portfolio is more concentrated on tech and consumer companies. It’s not an absolute must, but a key factor in determining how much, if any, allocation it gets in my portfolio.
+
+For example, I might put a small bet into a business that looks to be high quality even if I don’t understand it well enough at first. These small bets may grow larger only if my competence in the company grows. Sometimes I find myself with an outsized position when the stock grows faster than my competence. This becomes a great forcing-function - forcing me to either learn more about the company or trim the position.
+
+Limiting stock selection to stocks that are both high quality and within my circle of competence naturally leads to a limited selection. This leads to a relatively concentrated portfolio of about 30 names. I like 30 as an optimal number of stocks because it strikes a good balance between concentration and diversification.
+
+As I get better at picking stocks, I aspire to have an even more concentrated portfolio. Like [Bill Ackman](https://stockcircle.com/portfolio/bill-ackman?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles), being able to consistently beat the S&P in a $10B fund with just 7 long-term positions. But there’s a constant tension between trying to be more concentrated for performance reasons and the need for more diversification to reduce risk of ruin (#1) - so until I can get better at picking stocks, diversify we must!
+
+## Principle 3: Master the Cycles of Market & Mind
+
+There are predictable cycles for the market which reflects investor psychology. This is applicable to the broader market indices as well as individual stocks.
+
+There’s a quote attributed to Buffett which probably made me more money than any other:
+
+❝
+
+ 
+
+Be fearful when others are greedy and greedy when others are fearful
+
+ 
+
+Warren Buffett
+
+The reason my actively managed portfolio last year [made over 70%](https://mingdomcapital.substack.com/i/142193486/returns?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) is because I bought heavily into names like GOOGL, META, AMZN, TSLA when they were dropping throughout 2022.
+
+My track record for being greedy when others are fearful is pretty good, but being fearful when others get greedy is still a work-in-progress. That habit only started after I was taught a harsh lesson when the tech bubble burst in 2021 & 2022. Nowadays I check the [Fear & Greed Index](https://www.cnn.com/markets/fear-and-greed?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) daily to get a sense for market mood. At the time of writing, we are at 73 on the greed index, which is Greed bordering on Extreme Greed. This means the contrarian play is to be cautious. Indeed, Buffett holds close to [40% of his portfolio](https://buffett.online/en/portfolio/?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) in cash & bonds as of his last annual report.
+
+On the other hand, technical traders using trend following techniques like [Mark Minervini](https://www.amazon.com/Think-Trade-Like-Champion-Secrets/dp/0996307931/?_encoding=UTF8&pd_rd_w=RxZjb&content-id=amzn1.sym.cf86ec3a-68a6-43e9-8115-04171136930a&pf_rd_p=cf86ec3a-68a6-43e9-8115-04171136930a&pf_rd_r=133-1887195-6139740&pd_rd_wg=ZSTs4&pd_rd_r=266f3427-13db-4520-8086-97220b803cc6&ref_=aufs_ap_sc_dsk&utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) would say now is a great time to trade certain stocks as they develop into stage 2 (_see bullets below_). According to Minervini, stocks go through 4 stages in a cycle:
+
+1.  Neglect: Low volume, relatively flat movements.
+    
+2.  Advancing: Rapid rise, breaking out on high volume.
+    
+3.  Topping: At the peak of attention for a stock, there are no more buyers left. Less sophisticated investors are piling on.
+    
+4.  Decline: A decisive break from the highs, often on high volume.
+    
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F850e43c4-4a54-4851-bda2-316689c9ea53_1080x737.jpeg)
+
+*   _Image source:_ [Example of stock stages from Mark Minervini on](https://x.com/markminervini/status/1369054991328100359?s=20&utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) [X.com](http://X.com?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles)
+    
+
+So according to Minervini, to efficiently deploy my capital for most returns with the least amount of waiting, I should buy at the beginning of stage 2 and sell during stage 3 and avoid during stage 4.
+
+Who is right - Buffett or Minervini?
+
+## Principle 4: Master your own game
+
+Being aware of both the market cycles as well as a particular stock’s technical cycle is useful because it helps you realize that different people are playing different games in the market.
+
+[Morgan Housel](https://collabfund.com/blog/authors/morgan/?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles), author of the [Psychology of Money](https://www.amazon.com/Psychology-Money-Timeless-Lessons-Happiness/dp/B08D9WJ9G8/ref=sr_1_1?crid=G2GECEJEDR4V&dib=eyJ2IjoiMSJ9.AbLhXzYlRluSHJ18mvBX8Yuw0FLuckisuiGJYQZGXgWgjsFUmMhneQBD4O_Jr2ZyaHy7fSdWJVI0OAjpZdWCf9VemOuqfxB4aMuiYSm0I_DYDxGHeLywm2pukZwpbsd6QeYpgkoW_0dds315BW5xsrqInRXtzWe_BiLcp7vpRIy2LWLq5Vmx4JvCawpx5IQzkWoq8GsuV0BhoLR0r5-8Bv0BgWAKhGGAvdApenwMysg.DpkbORNe7u1Y0jPM-CMOjfj7YpQC8wpN_rY2x3Psnco&dib_tag=se&keywords=psychology+of+money&qid=1711811693&sprefix=nausea+band%2Caps%2C161&sr=8-1&utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) dedicated one chapter on this topic:
+
+Beware of taking financial cues from people a playing different game than you are.
+
+ 
+
+Morgan Housel
+
+Buffett and Minervini can both be right. The key is that they are playing different games, with different assets, on different time horizons. In addition, no one else have the exact same financial situation as you - so be wary of taking direct and specific advice from someone else. Now feels like an appropriate time for a _**disclaimer**_: _nothing on this Substack can be taken as financial advice!_
+
+That said, my hope with these principles is that they fit more in the general timeless truth category rather than specific financial advice.
+
+As for me, I know I’m not a good technical trader and I don’t want to put in the effort to become one. It seems to me quite unlikely that I can gain an edge here in the age of growing compute and AI. Not to mention all the kids with way faster reflexes than me day-trading.
+
+Studying great investors like Ackman and Buffett on the other hand feels like much better ROI. I’m also more interested in learning about and owning a piece of great companies.
+
+So I strive to get to a point where I know each of my portfolio holdings so well that I can stay in just a handful of positions and still beat the S&P consistently. Until then, I hope you enjoyed this post, please subscribe to join my journey!
+
+ 
+
+# Current thoughts on the market, 2024.04.12
+
+Just 10 days after I published the post, we are beginning to see volatility emerge as both Nasdaq (QQQ) and S&P500 (SPY) fall below its 50-day weighted moving average.
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0196bd19-fff3-4eb0-8e23-73d96ea2a65f/image.png?t=1712945272)
+
+SPY daily chart since September 2023
+
+It seems my caution was warranted 10 days ago when I posted that _“At the time of writing, we are at 73 on the greed index, which is Greed bordering on Extreme Greed. This means the contrarian play is to be cautious.”_
+
+The greed & fear index fell from 73 to 46 in record time - which is Neutral on the border of Fear. So this is telling me it’s not quite time to get greedy yet, but we might get there soon (when the needle moves to Fear or Extreme Fear)!
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/86d4914a-475d-49ae-af5a-62a2bbb10a24/image.png?t=1712944852)
+
+[
+
+Fear & Greed Index
+
+](https://www.cnn.com/markets/fear-and-greed?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles)
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3d5b5976-71bf-4bbc-be3e-15a2c4298539/image.png?t=1712944878)
+
+[
+
+Fear & Greed Index Timeline
+
+](https://www.cnn.com/markets/fear-and-greed?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles)
+
+**Given this, what am I doing or planning to do?**
+
+At a high level, I’m happy with my current asset allocations. I was cautious going into this year and had ~40% cash & bonds (which is extremely high for me) and that allocation remains largely unchanged (34% cash, 5% bonds).
+
+While allocations are not changed, I have been making tweaks to my portfolio in the following fashion:
+
+1.  Optimizing for tax efficiency: tax loss harvesting certain stocks in taxable accounts, moving more dividends and interest-yielding assets to retirement accounts… etc.
+    
+2.  Opportunistic trades: Adding to quality companies that have become cheaper recently and trimming positions that have gotten too expensive. In other words - buy low, sell high.
+    
+
+Overall, no major changes to my portfolio and I’m mostly just waiting for an opportunity to get greedy. As seen in the chart below, the overall market has become quote over-extended when looking at it from a longer-term.
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3f5f638c-ef32-47c1-8b9f-0e6766dff837/image.png?t=1712945216)
+
+SPY weekly chart since 2021
+
+**When would I start to dip into my cash position?**
+
+If the market psychology shifts to fear and extreme fear, I’ll start to dip into the cash. The amount I invest will be correlated to the significance of the correction. i.e. if SPY dips 15-20% to 430 or below, that’s when I’ll start getting very greedy indeed.
+
+If it doesn’t happen, I’ll be fine earning my 5% interest on cash.
+
+So until then, let’s wait and see what Mr. Market brings to the table next!

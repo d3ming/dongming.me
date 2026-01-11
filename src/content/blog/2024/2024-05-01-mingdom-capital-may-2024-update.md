@@ -1,0 +1,153 @@
+---
+title: "Mingdom Capital: May 2024 Update"
+description: "Announcing the Mingdom Capital public portfolio!"
+pubDatetime: 2024-05-02T01:24:14.000Z
+author: "Dong Ming"
+draft: true
+heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/2112d8d5-5594-45a5-8138-48e10c446673/Image_Creator_Microsoft_Designer.jpeg?t=1714967055"
+tags:
+  - investing; mingdom-capital
+  - import/beehiiv
+---
+
+### TLDR;
+
+*   I’m opening my portfolio to the public: [Mingdom Capital on SavvyTrader](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
+    
+*   I’m doing this mostly to prove that I can beat the market consistently over the long run. And if not, I hope to find out sooner rather than later.
+    
+*   So far so good 🤞 - my portfolio hit top 10 among thousands featured on SavvyTrader last month!
+    
+*   Will update portfolio performance on a monthly cadence moving forward
+    
+*   Help me spread the word by following me on Twitter and liking [this post](https://x.com/dming/status/1786571847292932285?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
+    
+
+## The Bet
+
+In 2008, Warren Buffett made a [$1M bet](https://www.investopedia.com/articles/investing/030916/buffetts-bet-hedge-funds-year-eight-brka-brkb.asp?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update) with any hedge fund that would accept that they wouldn’t be able to beat the S&P 500 index. One hedge fund took him on on the challenge, and by 2017 they conceded defeat early when it became obvious that they weren’t going to win.
+
+Since then, it’s become common wisdom that one should not aim to beat the S&P500. Instead, most investors should just invest in a low cost ETF like SPY and call it a day.
+
+Well, I’ve been actively investing in the stock market since 2009. I’ve certainly had my moments, being an early investor in names like META and TSLA since their IPO. I’ve also made plenty of mistakes along the way and learned from them. I wish I could say with confidence that I overall beat the market in the last decade and half but the reality is I just don’t know for certain since I never seriously tracked my performance.
+
+That all changed last year, after I “[retired](https://www.linkedin.com/posts/dongming_today-is-my-last-day-at-axon-and-yesterday-activity-7037472615547998209-yj31?utm_source=share&utm_medium=member_desktop)” from my first career in the software industry, consolidated my accounts and started to track portfolio performance on a monthly basis.
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/5f9fb1e3-95b7-479c-b019-efb26e70717a/Screenshot_2024-05-05_at_18.29.07.png?t=1714959023)
+
+Mingdom Capital 2023 Performance
+
+Besides beating SPY by 50% last year, I was able to also protect my portfolio from market downturns. The only down month was in October where the portfolio did -0.18% vs. SPY’s -4.0%.
+
+## Introducing the Mingdom Capital portfolio on SavvyTrader
+
+Being ahead of the SPY in my first year of tracking by 50% is huge but I know it’s nothing to write home about since tech stocks (my speciality) broadly outperformed.
+
+So this year I decided to up the ante further by starting a public portfolio and keeping it up to date with my real portfolio on a platform called SavvyTrader. You can **subscribe to my portfolio via the link below:**
+
+[![](https://static.savvytrader.com/images/og_discover_big.png)](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
+
+[Mingdom Capital Portfolio on SavvyTrader](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
+
+Savvy Trader - Discover, Create, Share and Trade Virtual Paper Portfolios
+
+trader.mingdom.co
+
+I started it on February 1 but only fully deployed the funds by April. Despite missing out on some of the market run-up during February and March, this portfolio is now also beating the SPY since inception!
+
+### Why am I sharing my portfolio and trades?
+
+This wasn’t an easy decision to me. After all, investing has always felt like a private endeavor. Moreover, there is very limited upside with high potential downside for sharing as my readers are mostly friends & family.
+
+Ultimately, I decided to do it because I want to see what it’s like to be a professional investor. This is more or less my primary job now after all. I actually see some parallels in managing a portfolio of stocks and an organization of software engineers… both are fundamentally exercises in resource allocation, i.e deciding which projects or investments to fund. But I digress.
+
+The main reasons I chose a platform like SavvyTrader:
+
+1.  **Accountability**: Currently the only investor in my fund beside me is my wife - she is very lenient and doesn’t really care to check my work. By buying and selling in the open, even if I have no subscribers, I’m tricking myself to mentally act as a fiduciary to my investors. In addition, my account’s performance is compared to thousands of other portfolios including investing legends like Warren Buffett and Bill Ackman. If I want to be a pro, I got to be accountable like a pro.
+    
+2.  **Performance Tracking**: Built into the platform is portfolio performance tracking over different time horizons and comparisons against benchmarks like SPY.
+    
+3.  **Discussion**: Subscribers to my portfolio will get real-time alerts for every trade I place and the rationale behind it. Over time, as I build a larger subscriber base, I hope to engage and discuss investment ideas with a community.
+    
+4.  **Passive income**: Help a _struggling_ retiree stay retired today! _Kidding!_
+    
+
+### Portfolio Performance
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/b3285f34-4b5a-432a-8b45-6bd2dca62ee1/Screenshot_2024-05-05_at_18.52.03.png?t=1714960377)
+
+Portfolio Performance since Inception (Feb 1, 2024)
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/cda68a03-18e0-4174-a135-61153bbdd010/Screenshot_2024-05-05_at_18.52.24.png?t=1714960429)
+
+Portfolio Performance last 1 Month
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a1a70288-dfa6-4ff3-9817-8819ba0684e4/savvy-top-portfolios.png?t=1714962145)
+
+My portfolio was among the top 10 last month!
+
+### Portfolio Composition
+
+My ideal portfolio looks like:
+
+*   High quality companies with strong and sustainable moats
+    
+*   Trading at a fair price based on DCF analysis
+    
+*   Concentrated on my areas of competence, which is technology and consumer discretionary.
+    
+
+Current allocation / concentration:
+
+*   35 positions but with high top-heavy concentration
+    
+*   Top 3 positions accounts for 35% of capital
+    
+*   Top 7 positions accounts for more than 50% of capital
+    
+*   Conversely, the bottom 10 positions in the portfolio only accounts for a tiny (~5%) of the portfolio. The idea is to have a bunch of smaller bets on high risk / high reward stocks.
+    
+
+See my post on [Investment Principles](https://www.mingdom.co/p/investment-principles-2024?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update&last_resource_guid=Post%3A50b92c1b-9475-4ff1-94a1-b0c3265f724d) for more on my guiding principles.
+
+### Disclaimers
+
+Although I try my best to keep the [portfolio](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update) up to date against my real accounts, there are a few key differences:
+
+1.  This portfolio will aim to be fully deployed with little to no cash. This is so it can compare fairly against benchmarks like SPY which will never have cash. This however does not reflect my real asset allocation as I may choose to keep a substantial amount of cash, bonds or other types of assets.
+    
+2.  This portfolio can only hold stocks but my real portfolio will use options as well.
+    
+3.  This portfolio will trade more frequently as my main aim is to be optimal in asset allocation without consideration of tax efficiency. My real portfolio has most of its assets in a taxable account so I employ tactics like tax-loss harvesting.
+    
+
+So the best way to think of this [portfolio](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update) is as if I’m running an ETF with what I consider to be the most optimal stock allocations. It’s going to be close to my own portfolio but never exact.
+
+Finally and most importantly - _nothing I write about or share here can be taken as personal financial advice!_
+
+### Call to Action
+
+With all these disclaimers out of the way, if you’d like to support my journey in beating the S&P over 10 years of public performance by:
+
+1.  Subscribe to [my portfolio](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
+    
+2.  Follow me on Twitter and like [this post](https://x.com/dming/status/1786571847292932285?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
+    
+
+ 
+
+## Thoughts on the market (2024/5/5)
+
+On [4/12, I wrote](https://www.mingdom.co/p/investment-principles-2024?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update&last_resource_guid=Post%3A50b92c1b-9475-4ff1-94a1-b0c3265f724d#current-thoughts-on-the-market-2024):
+
+The greed & fear index fell from 73 to 46 in record time - which is Neutral on the border of Fear. So this is telling me it’s not quite time to get greedy yet, but we might get there soon (when the needle moves to Fear or Extreme Fear)!
+
+At a high level, I’m happy with my current asset allocations. I was cautious going into this year and had ~40% cash & bonds (which is extremely high for me) and that allocation remains largely unchanged (34% cash, 5% bonds).
+
+The market indeed dropped further from there and I was able to find more opportunities to deploy more cash as the market dipped further into fear. Currently sitting at around 33% in cash and bonds. As a reference, Buffett recently announced that his company now holds close to [$200B in cash](https://www.nasdaq.com/articles/warren-buffett-discusses-apple-cash-insurance-artificial-intelligence-ai-and-more-at?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update#:~:text=Hoarding%20a%20treasure%20trove%20of%20cash&text=Another%20asset%20Berkshire%20loves%20is,end%20of%20the%20second%20quarter.) and [347B in stocks](https://stockcircle.com/portfolio/warren-buffett?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update). So he’s allocating ~36% cash, a little more than me. The rationale is that the risk-free interest rate is over 5%, so it’s OK to be patiently waiting for better opportunities.
+
+We are nearing the end of the current earnings season, most of the big tech companies have reported and it’s overall been positive. META was the only name in my portfolio to dip significantly post-earnings, it wasn’t for a good reason and picked up more shares when it sold off for almost 20% in the after-hours of 4/25.
+
+The big shoe that hasn’t dropped this earnings season is Nvidia, who reports at the end of the month. Until then, my guess is that the market won’t make huge moves and I’m continuing to stay cautious and patient with a sizable cash position.
+
+I plan to write an update monthly on the portfolio performance and my thoughts on the market.
