@@ -8,74 +8,132 @@ export interface Props {
   title?: string;
   description?: string;
   canonicalURL?: string;
+  showProgressBar?: boolean;
 }
 
 const {
   title = "TBD | Dong Ming",
   description = "To Be Dong - Personal site of Dong Ming",
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
+  showProgressBar = false,
 } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/jpeg" href="/avatar.jpg" />
-    <link rel="apple-touch-icon" href="/avatar.jpg" />
-    <meta name="generator" content={Astro.generator} />
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="icon" type="image/jpeg" href="/avatar.jpg" />
+<link rel="apple-touch-icon" href="/avatar.jpg" />
+<meta name="generator" content={Astro.generator} />
 
-    <title>{title}</title>
-    <meta name="title" content={title} />
-    <meta name="description" content={description} />
-    <link rel="canonical" href={canonicalURL} />
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalURL} />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL("/avatar.jpg", Astro.url)} />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL("/avatar.jpg", Astro.url)} />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={Astro.url} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={new URL("/avatar.jpg", Astro.url)} />
-    <ClientRouter />
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL("/avatar.jpg", Astro.url)} />
+<ClientRouter />
 
-    <script is:inline>
-      const theme = (() => {
-        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-          return localStorage.getItem('theme');
-        }
-        return 'dark';
-      })();
+<script is:inline>
+const theme = (() => {
+if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+return localStorage.getItem('theme');
+}
+return 'light';
+})()                                                                        ;
 
-      if (theme === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
+if (theme === 'light') {
+document.documentElement.setAttribute('data-theme', 'light');
+} else {
+document.documentElement.setAttribute('data-theme', 'dark');
+}
 
-      window.localStorage.setItem('theme', theme);
+window.localStorage.setItem('theme', theme) ;
 
-      document.addEventListener('astro:after-swap', () => {
-        if (localStorage.getItem('theme') === 'light') {
-          document.documentElement.setAttribute('data-theme', 'light');
-        } else {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        }
-      });
-    </script>
-  </head>
-  <body class="flex flex-col min-h-screen bg-background text-foreground font-mono antialiased selection:bg-accent/20 selection:text-accent">
-    <Header />
-    <main class="flex-grow">
-      <slot />
-    </main>
-    <Footer />
-  </body>
+document.addEventListener('astro:after-swap', () => {
+if (localStorage.getItem('theme') === 'light') {
+document.documentElement.setAttribute('data-theme', 'light');
+} else {
+document.documentElement.setAttribute('data-theme', 'dark');
+}
+})                                                                                                                                         ;
+</script>
+</head>
+<body class="flex flex-col min-h-screen bg-background text-foreground font-mono antialiased selection:bg-accent/20 selection:text-accent">
+{showProgressBar && (
+<script is:inline>
+(function() {
+function createProgressBar() {
+// Check if bar already exists to avoid duplicates
+if (document.getElementById("progress-bar-container")) return                                                                              ;
+
+// Create the main container div (Exact pattern from reference site)
+const progressContainer = document.createElement("div");
+progressContainer.id = "progress-bar-container";
+progressContainer.className = "progress-container fixed top-0 left-0 z-[9999] h-1 w-full bg-background opacity-75";
+
+// Create the progress bar div
+const progressBar = document.createElement("div");
+progressBar.id = "progress-bar";
+progressBar.className = "progress-bar h-1 bg-accent";
+progressBar.style.width = "0%";
+progressBar.style.transition = "width 0.15s ease-out";
+// Add a neon glow for visibility
+progressBar.style.boxShadow = "0 0 12px 2px var(--accent)";
+progressBar.style.filter = "brightness(1.2)";
+
+// Append
+progressContainer.appendChild(progressBar)   ;
+document.body.appendChild(progressContainer) ;
+}
+
+function updateScrollProgress() {
+const winScroll = document.body.scrollTop || document.documentElement.scrollTop              ;
+const height = document.documentElement.scrollHeight - document.documentElement.clientHeight ;
+const scrolled = height > 0 ? (winScroll / height) * 100 : 0                                 ;
+
+const myBar = document.getElementById("progress-bar");
+if (myBar) {
+myBar.style.width = scrolled + "%";
+}
+}
+
+// Initialize on load and refresh
+createProgressBar()               ;
+updateScrollProgress()            ;
+
+// Listeners
+window.addEventListener("scroll", updateScrollProgress) ;
+window.addEventListener("resize", updateScrollProgress) ;
+
+// Astro View Transitions support
+document.addEventListener("astro:page-load", () => {
+createProgressBar()                                  ;
+updateScrollProgress()                               ;
+})                                                   ;
+
+console.log('%c [REF-MATCH] Progress Bar Active ', 'background: #A855F7; color: white;');
+})()                                                                                      ;
+</script>
+)}
+<Header />
+<main class="flex-grow">
+<slot />
+</main>
+<Footer />
+</body>
 </html>

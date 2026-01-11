@@ -3,23 +3,25 @@ title: "Investment Principles"
 description: "and thoughts on the current market"
 pubDatetime: 2024-04-13T00:27:10.000Z
 author: "Dong Ming"
+draft: false
 heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/fc62ce9b-eea1-44d3-978e-2f5df261b25f/stoic-principles.jpeg?t=1713057121"
 tags:
   - investing; mingdom-capital
+  - import/beehiiv
 ---
 
 _This is sort of a 2-for-1 post as I’m consolidating from Substack to Beehiiv:_
 
 1.  A repost from April 2, 2024: [Investment Principles, 2024 edition](https://mingdomcapital.substack.com/p/investment-principles-2024-edition?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles):
-    
+
     1.  [Avoid Risk of Ruin](#principle-1-avoid-risk-of-ruin)
-        
+
     2.  [Concentrating on Quality & Competence](#principle-2-concentrating-on-qualit)
-        
+
     3.  [Master the Cycles of Market & Mind](#principle-3-master-the-cycles-of-ma)
-        
+
 2.  [Current (April 10th, 2024) thoughts on the stock market and my next steps](#current-thoughts-on-the-market-2024)
-    
+
 
 # Investment Principles
 
@@ -38,24 +40,24 @@ Imagine working hard and achieving a 15% return for 5 years (better than S&P), o
 While it’s obvious that smaller losses are easy to recover compared to large, the magnitude of this effect can be shocking:
 
 *   10% loss requires 11% to recover
-    
+
 *   25% loss requires 33%
-    
+
 *   50% loss requires 100%
-    
+
 *   75% loss requires 300%
-    
+
 *   90% loss requires 900%!
-    
+
 
 As you can see, larger losses beyond ~25% quickly gets harder to recover and should be avoided at all cost.
 
 How? I want to explore this topic in a future post but sharing some quick thoughts:
 
 1.  Asset allocation - enough diversification in different types of asset. Alter asset mix based on current market situation.
-    
+
 2.  Hedging strategy - using options and other instruments to provide downside protection and asymmetric payoff in the event of a major negative event.
-    
+
 
 ## Principle 2: Concentrating on Quality & Competence
 
@@ -106,18 +108,18 @@ My track record for being greedy when others are fearful is pretty good, but bei
 On the other hand, technical traders using trend following techniques like [Mark Minervini](https://www.amazon.com/Think-Trade-Like-Champion-Secrets/dp/0996307931/?_encoding=UTF8&pd_rd_w=RxZjb&content-id=amzn1.sym.cf86ec3a-68a6-43e9-8115-04171136930a&pf_rd_p=cf86ec3a-68a6-43e9-8115-04171136930a&pf_rd_r=133-1887195-6139740&pd_rd_wg=ZSTs4&pd_rd_r=266f3427-13db-4520-8086-97220b803cc6&ref_=aufs_ap_sc_dsk&utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) would say now is a great time to trade certain stocks as they develop into stage 2 (_see bullets below_). According to Minervini, stocks go through 4 stages in a cycle:
 
 1.  Neglect: Low volume, relatively flat movements.
-    
+
 2.  Advancing: Rapid rise, breaking out on high volume.
-    
+
 3.  Topping: At the peak of attention for a stock, there are no more buyers left. Less sophisticated investors are piling on.
-    
+
 4.  Decline: A decisive break from the highs, often on high volume.
-    
+
 
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F850e43c4-4a54-4851-bda2-316689c9ea53_1080x737.jpeg)
 
 *   _Image source:_ [Example of stock stages from Mark Minervini on](https://x.com/markminervini/status/1369054991328100359?s=20&utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles) [X.com](http://X.com?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=investment-principles)
-    
+
 
 So according to Minervini, to efficiently deploy my capital for most returns with the least amount of waiting, I should buy at the beginning of stage 2 and sell during stage 3 and avoid during stage 4.
 
@@ -182,9 +184,9 @@ At a high level, I’m happy with my current asset allocations. I was cautious g
 While allocations are not changed, I have been making tweaks to my portfolio in the following fashion:
 
 1.  Optimizing for tax efficiency: tax loss harvesting certain stocks in taxable accounts, moving more dividends and interest-yielding assets to retirement accounts… etc.
-    
+
 2.  Opportunistic trades: Adding to quality companies that have become cheaper recently and trimming positions that have gotten too expensive. In other words - buy low, sell high.
-    
+
 
 Overall, no major changes to my portfolio and I’m mostly just waiting for an opportunity to get greedy. As seen in the chart below, the overall market has become quote over-extended when looking at it from a longer-term.
 

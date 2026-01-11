@@ -3,10 +3,11 @@ title: "Just start"
 description: "Overcoming the resistance to write, for today."
 pubDatetime: 2024-04-10T05:00:20.000Z
 author: "Dong Ming"
+draft: true
 heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/fb1151ae-5071-4028-86d4-7e98d4291a09/just-start-writing.jpeg?t=1713057476"
 tags:
   - thoughts
-draft: true
+  - import/beehiiv
 ---
 
 Writing is hard, how to enjoy the journey and overcome internal resistance?

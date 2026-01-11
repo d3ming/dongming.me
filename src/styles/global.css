@@ -10,7 +10,29 @@
    All variants are WCAG AA compliant.
    ============================================ */
 
-:root,
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --muted: #f3f4f6;
+  --muted-foreground: #666666;
+  --border: #e5e7eb;
+
+  /* 🎨 VARIANT A: Vibrant Royal (ACTIVE - Recommended) */
+  --accent: #9333EA;
+  --accent-hover: #7C3AED;
+  --accent-muted: #A855F7;
+
+  /* 🎨 VARIANT B: Deep Regal (Uncomment to try) */
+  /* --accent: #7E22CE; */
+  /* --accent-hover: #6D28D9; */
+  /* --accent-muted: #7C3AED; */
+
+  /* 🎨 VARIANT C: Bright Fuchsia (Uncomment to try) */
+  /* --accent: #A855F7; */
+  /* --accent-hover: #C084FC; */
+  /* --accent-muted: #D946EF; */
+}
+
 html[data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #ededed;
@@ -20,9 +42,9 @@ html[data-theme="dark"] {
 
   /* 🎨 VARIANT A: Vibrant Royal (ACTIVE - Recommended) */
   /* Energetic, modern, excellent contrast */
-  --accent: #A855F7;
-  --accent-hover: #C084FC;
-  --accent-muted: #7C3AED;
+  --accent: #C084FC;
+  --accent-hover: #D8B4FE;
+  --accent-muted: #A855F7;
 
   /* 🎨 VARIANT B: Deep Regal (Uncomment to try) */
   /* Sophisticated, premium, refined */
@@ -77,7 +99,7 @@ html[data-theme="light"] {
   }
 
   html {
-    @apply overflow-y-scroll scroll-smooth;
+    @apply overflow-y-scroll;
   }
 
   body {

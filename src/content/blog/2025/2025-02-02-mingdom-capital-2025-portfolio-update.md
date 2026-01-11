@@ -3,7 +3,7 @@ title: "Mingdom Capital: 2025 Portfolio Update"
 description: "2024 was a huge win. What will 2025 bring?"
 pubDatetime: 2025-02-02T10:30:09.000Z
 author: "Dong Ming"
-draft: true
+draft: false
 heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/570e742f-6092-4eaa-a71b-ed42767d7e8e/Designer__1_.jpeg?t=1738469625"
 tags:
   - mingdom-capital
@@ -13,11 +13,11 @@ tags:
 In this issue:
 
 1.  Portfolio Performance after 1 full year trading publicly
-    
+
 2.  Top 10 Positions
-    
+
 3.  Thoughts on the market
-    
+
 
 ## Performance
 
@@ -110,19 +110,19 @@ As you can see, every top 10 position had positive returns except for UBER at -1
 Commentary on the top 10 positions compared to the [last update](https://www.mingdom.co/p/mingdom-capital-2024-q3-update?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2025-portfolio-update&_bhlid=374ce2511315662008061d0a5d37a0b28bbb7a47&last_resource_guid=Post%3Ae3e5924f-9a9d-488b-9cf8-58cc7ac8795f) at end of Q3 2024:
 
 *   **GOOGL**, **META**, **AMZN**: These remain the top 3 positions in my portfolio and nothing else is that close… But I trimmed GOOGL allocation to be closer to META and AMZN since I overbought when it dropped to $160 and now it’s at ATH of $204. I no longer feel Google is outrageously mis-priced but it remains my number 1 position.
-    
+
 *   **MA, V**: I dropped Visa (V) for Mastercard (MA). It’s really a toss up, but given American Express (AXP) is already a large position, I didn’t think having both V and MA helped me with diversification and ultimately chose MA.
-    
+
 *   **UBER**, **TSLA**: I sold TSLA for a very nice profit (2-3x from buying at $150-160) and put that money towards Uber. I think the market is very wrong to think if Waymo or Tesla reach full autonomy that Uber will die. Some are comparing Uber to Blockbuster when Netflix is coming. I continue to think full autonomy will sooner or later be commoditized (many companies will achieve it) but Uber will still be the dominant market place for ride-share and delivery and net-net benefit from this. Also Waymo is wayyyyyyymo ahead of Tesla in achieving full autonomy, and they are owned by Google. Waymo partners with Uber and is expanding its partnership in 2025. Going into 2025, I think Uber is one of the most mis-priced large-cap stocks.
-    
+
 *   **NVDA**: I trimmed my position in NVDA above $140 and bought back more recently as it dropped to $120. Overall it’s a smaller % of the portfolio due both the trimming and the price drop (from 7.6% to 5.1%). I would pick up more if it drops more because I think the recent market reaction to news around DeepSeek and tariffs are overblown and it creates an opportunity. Nvidia is a cyclical stock but this is probably the largest investment cycle ever and I don’t think we are anywhere close to the peak. I’m looking forward to the next earnings call at the end of February to confirm or re-evaluate my thesis.
-    
+
 *   **APP**: This one makes me anxious because it went from $80 to over $400 at one point last year. My biggest winner of the year by far. I trimmed some on the way up but it still ended up being a top 10 position simply due to price appreciation.
-    
+
 *   **LULU**: Well I was right to keep holding and making it a top 10 last time. Since dropping to the $200s they have now bounced to over $400. I over-allocated in it before since it was so cheap, and I sold some on the way up so it’s no longer a top 10. Allocation went from 2.2% to 1.8%.
-    
+
 *   **BRKB**: Dropped Berkshire (BRKB). I held it mostly as a hedge against big tech, it was almost like a cash or bond instrument. I decided to sell it and instead just hold SCYB that is actually a High Yield Bond ETF with predictable income.
-    
+
 
 ## Thoughts on the market and what I’m planning to do in 2025
 

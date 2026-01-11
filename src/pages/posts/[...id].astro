@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, remarkPluginFrontmatter } = await render(post);
 
 const articleUrl = new URL(`/posts/${post.id}`, Astro.site).href;
 const imageUrl = new URL(SITE.ogImage, Astro.site).href;
@@ -58,18 +58,27 @@ const structuredData = {
 title={`${post.data.title} | Dong Ming`}
 description={post.data.description}
 canonicalURL={post.data.canonicalURL}
+showProgressBar={true}
 >
 <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 <section class="py-12">
 <article class="prose prose-neutral dark:prose-invert max-w-none">
 <header class="mb-8">
 <h1 class="text-3xl font-bold mb-2">{post.data.title}</h1>
-<div class="text-muted-foreground text-sm">
+<div class="text-muted-foreground text-sm flex items-center">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+
 {post.data.pubDatetime.toLocaleDateString("en-US", {
 year: 'numeric',
 month: 'long',
 day: 'numeric'
 })}
+{remarkPluginFrontmatter?.readingTime && (
+<>
+<span class="mx-2">•</span>
+<span>{remarkPluginFrontmatter.readingTime}</span>
+</>
+)}
 </div>
 </header>
 <Content />

@@ -16,19 +16,19 @@ const formattedDate = pubDate.toLocaleDateString("en-us", {
 ---
 
 <li class="group list-none">
-  <a href={href} class="block py-6 outline-none">
-    <div class="flex flex-col gap-2">
-      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
-        <h3 class="text-lg font-bold group-hover:text-accent transition-colors decoration-accent/30 decoration-2 underline-offset-4 group-hover:underline">
-          {title}
-        </h3>
-        <time datetime={pubDate.toISOString()} class="text-xs font-mono text-muted-foreground whitespace-nowrap">
-          {formattedDate}
-        </time>
-      </div>
-      <p class="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-        {description}
-      </p>
-    </div>
-  </a>
+<a href={href} class="block py-4 outline-none">
+<div class="flex items-baseline justify-between gap-4 mb-2">
+<h3 class="text-base font-bold group-hover:text-accent transition-colors decoration-accent/30 decoration-2 underline-offset-4 group-hover:underline truncate flex-1">
+{title}
+</h3>
+<time datetime={pubDate.toISOString()} class="text-xs font-mono text-muted-foreground whitespace-nowrap opacity-60 group-hover:opacity-100 transition-opacity">
+{formattedDate}
+</time>
+</div>
+{description && (
+<p class="text-sm text-muted-foreground/70 line-clamp-2 leading-relaxed group-hover:text-muted-foreground transition-colors">
+{description}
+</p>
+)}
+</a>
 </li>

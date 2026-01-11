@@ -3,21 +3,23 @@ title: "Mingdom Capital 2025 Q2 Update"
 description: "Extreme Greed is back... but this time I'm Bullish?"
 pubDatetime: 2025-07-10T00:11:40.000Z
 author: "Dong Ming"
+draft: false
 heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/42d2f6ff-297b-4f50-a5c7-d696dc27078b/artificial_robotic_bull_market__1_.jpeg?t=1752438525"
 tags:
   - mingdom-capital
+  - import/beehiiv
 ---
 
 In this issue:
 
 1.  [Portfolio Performance](#portfolio-performance)
-    
+
 2.  [Top Holdings Deep Dive](#top-positions-analysis)
-    
+
 3.  [Retrospective](#retrospective-what-did-i-learn)
-    
+
 4.  [Thoughts on the market moving forward](#thoughts-on-the-market)
-    
+
 
  
 
@@ -52,17 +54,17 @@ Top 13 positions
 I wrote at the beginning of the year that my top 10 position _GOOGL, META, AMZN, AXP, UBER, MA, NVDA, APP, BKNG, MELI,_ so there have been some changes. Notably:
 
 *   Sold AXP to consolidate more into MA which IMO is a higher quality company.
-    
+
 *   TSM has now overtaken NVDA as the top semiconductor stock
-    
+
 *   APP no longer a top 10 position, I held through its massive 60% drawdown then trimmed it.
-    
+
 *   MSFT made the top 10! I was surprised at how well their cloud business is doing from the last quarter’s earnings. The tariff dip gave me a reasonable entry-point.
-    
+
 *   Reduced APP. There was a well-timed short seller attack on the company just as the tariff dip was happening, caused a 60% drawdown in the stock. It used to be my 8th largest position simply because of how much it appreciated in the portfolio. I held through the drawdown and trimmed as it bounced back. I did this to reduce risk and volatility to my portfolio, no plan to sell as long as they are executing well.
-    
+
 *   ASML and INTU are now two core holdings but not in the top 10. Both up about 10% since purchase.
-    
+
 
 ### Stats for Geeks
 
@@ -91,11 +93,11 @@ Growth Metrics
 I know that’s a lot of numbers but I like to look at valuation metrics in context of the growth. A few observations:
 
 1.  Google is like not dying? Its current year revenue and next year’s revenue are both above its 3Y average revenue. LLMs have been out for more than 3 years now so the narrative that Google is dying is simply false from a financial perspective. Meanwhile its price ratio is much lower than peers like META and MSFT which I also own.
-    
+
 2.  NVDA is the most expensive company I hold by most valuation metrics. But it grew revenue by 86% YoY and EPS by 81%… and we already talked about how crazy profitable/high moat it is. So maybe it’s justified?
-    
+
 3.  UBER is turning massively profitable. It’s the cheapest company by current year P/E. I think it has lots more room to run.
-    
+
 
  
 
@@ -165,22 +167,22 @@ Similarweb @Similarweb
 
 GenAI Traffic Share Update —      
 
-🗓️ 12 months ago:  
-ChatGPT: 84.4%  
-Google: 8.9%  
-Perplexity: 1.4%  
-Claude: 1.9%  
+🗓️ 12 months ago:
+ChatGPT: 84.4%
+Google: 8.9%
+Perplexity: 1.4%
+Claude: 1.9%
 Microsoft: 0.9%
 
-🗓️ 6 months ago:     
-ChatGPT: 86.7%  
-Google: 5.7%     
-Perplexity: 1.9%    
-Claude: 1.5%    
-Microsoft: 1.5%  
+🗓️ 6 months ago:   
+ChatGPT: 86.7%
+Google: 5.7%   
+Perplexity: 1.9%  
+Claude: 1.5%  
+Microsoft: 1.5%
 DeepSeek: 0.7%
 
-🗓️ 3 months ago:     
+🗓️ 3 months ago:   
 ChatGPT:
 
 ![](https://pbs.twimg.com/media/GvajhWZXwAEWY2J.png)
@@ -210,15 +212,15 @@ Had I written that prediction a week later on April 7th it would have been a sla
 The last quarter was excruciating at times, and I think I learned a lot and grew as an investor. Here are some of my take-aways in no particular order:
 
 *   Speculating on macro is fun but I should focus way more of time on making sure the individual companies I own are doing well. Use volatility as an opportunity to accumulate shares in the best businesses at a lower price.
-    
+
 *   Psychology is so important. I mean I knew this and I knew I should be greedy when there was extreme fear, but honestly I got more conservative as the market was tanking and that’s the main reason why the fund hasn’t outperformed even more.
-    
+
 *   On hedging - I am increasingly of the opinion that I should not bother to hedge against market downturns. This is a more specific version of the last point. The main issue is that it’s very hard to time hedges appropriately. And even if I am right and the market goes down more, when do you close the hedge? So basically in order for hedging to work you have to time it right twice. This doesn’t show up in the SavvyTrader portfolio since it’s only stocks but in my personal portfolio I tried hedging by using options as well as directly shorting the indices while the market was going down and made a LOT of money initially, then the hedges got completely busted with the announcement of the tariff pause and the insane V shaped recovery we got after that.
-    
+
 *   On trading - I am trading much more frequently but I accept that I’m doing it more for fun and learning than anything else. I started a separate account for pure trading to keep it separate from my core investments. The key difference between investors and traders is that investors spend a lot more time researching the fundamentals of a business and will buy/accumulate as the price drops where as traders generally try to ride the momentum and won’t touch stocks that are below key moving averages. I actually have come to respect trading and professional traders a lot more recently and I’m putting a small % of my assets to pursue trading myself. This is one of the luxuries of being retired early I guess =)
-    
+
 *   On technical analysis - I use it way more and this goes hand in hand with the last point. It’s abundantly clear that perhaps the majority of active market participants (i.e. most of the volume per day) come from traders rather than investors and knowing the basics of technical analysis can really help decide when to enter or exit a position. I think even as long term investors, it pays to understand the basics of technical analysis.
-    
+
 
 Next, let’s go over my thoughts on the market and predictions looking forward.
 

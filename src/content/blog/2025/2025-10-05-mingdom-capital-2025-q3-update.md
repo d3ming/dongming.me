@@ -3,9 +3,11 @@ title: "Mingdom Capital 2025 Q3 Update"
 description: "Google is finally not dying to AI; Portfolio +26% YTD, near ATH."
 pubDatetime: 2025-10-05T00:25:11.000Z
 author: "Dong Ming"
+draft: false
 heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/9d02d972-406c-4abb-9747-8f61de38a0af/Riding_the_wave_of_stock_market_rally.jpeg?t=1759759581"
 tags:
   - mingdom-capital
+  - import/beehiiv
 ---
 
 I started sharing my long term, stock-only portfolio on [SavvyTrader](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2025-q3-update&_bhlid=99e978cdf3ecaa62f8a564a0779e456cc4795b8a) since Feb 1, 2024. I also trade options and do many shorter term swing trades but that won’t be included in this portfolio. My goal for the Mingdom Capital portfolio is to beat the SPY consistently over the long term in performance and risk-adjusted returns.
@@ -42,11 +44,11 @@ It’s not enough to beat the SPY, my other goal is to have better risk-adjusted
 Thoughts:
 
 *   The **max-drawdown of 9.2%** isn’t great compared to the benchmarks. The main reason for a worse drawdown is because of APP (Applovin) went from $500 to $240 in the course of one month as 4 different short sellers piled on. Thankfully I held on through the lows but have reduced / taken profit on it as it recovered. It’s now $680 and was almost $750 at one point!
-    
+
 *   Sharpe and Sortino ratio are both used to measure risk-adjusted returns. I prefer Sortino because it doesn’t penalize your portfolio for having volatility for the upside (because I’m fine with my portfolio violently moving up, just not down). So it’s great to see a **Sortino of 3.1, much better than SPY, QQQ and ARKK.**
-    
+
 *   The reason I listed ARKK as a benchmark above is because high Beta and small caps have outperformed SPY significantly recently. But when meansured with Sortino you can see it’s quite terrible at 1.9. This means despite the higher performance, ARKK is worse for risk-adjusted return than SPY and QQQ (should be obvious but maybe not in this environment).
-    
+
 
 ### Top Positions
 
@@ -67,17 +69,17 @@ Portfolio is top heavy, top 10 = 76%, top 13 = 80%.
 In the [Q2 review](https://www.mingdom.co/p/mingdom-capital-2025-q2-update?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2025-q3-update&_bhlid=42fcb55f47305edadcac3da0e4cce73e047ee1ea&last_resource_guid=Post%3A15a17445-2f3b-4381-8b0b-f38bf4d9ad5a), my top 13 were GOOGL, AMZN, META, MA, TSM, MELI, NVDA, UBER, BKNG, MSFT, ASML, INTU, APP. Notable changes and thoughts below:
 
 *   UBER went from 8th place to 3rd. I aggressively added recently.
-    
+
 *   UNH is now top 10. I want more exposure to healthcare and biotech stocks to diversify my portfolio. I’m also actively researching more opportunities in this space.
-    
+
 *   TSM and ASML higher weighting, mostly due to higher performance.
-    
+
 *   Trimmed / took profit on META, NVDA, APP.
-    
+
 *   Reduced MSFT and INTU and put it towards CRM and ADBE instead.
-    
+
 *   Last time I wrote “_My top two positions in GOOGL and AMZN were actually biggest laggard in performance so far this year…”_, Google went on a huge run last quarter so now I’m just waiting on Amazon =)
-    
+
 
 ## What I’m learning or changing my mind on
 

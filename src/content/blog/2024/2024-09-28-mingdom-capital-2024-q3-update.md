@@ -3,7 +3,7 @@ title: "Mingdom Capital: 2024 Q3 Update"
 description: "Cautiously optimistic... back to all time high!"
 pubDatetime: 2024-09-28T23:20:05.000Z
 author: "Dong Ming"
-draft: true
+draft: false
 heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f269c495-5221-478c-ae6a-46a24a1b6fe0/Microsoft_Designer_Image__2_.jpeg?t=1727636456"
 tags:
   - mingdom-capital
@@ -15,11 +15,11 @@ tags:
 Since the [Q2 update](https://www.mingdom.co/p/mingdom-capital-2024-q2-update?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=2492f6b6313058009939adcd5ef0ee6282c0ac80&last_resource_guid=Post%3A7a625305-43b4-4747-9342-646607123e5e):
 
 *   Major corrections bringing back some volatility in the market. Most notable was “Black Monday” on August 5 where the volatility index for S&P (VIX) spiked to over 60 during the day!
-    
+
 *   Fed started cutting rates - first cut was 50bp, which is slightly on the high end of what is expected by the market.
-    
+
 *   China announced stimulus for their economy and stock market. Chinese stocks like BABA and BIDU went up 20% last week.
-    
+
 
 [![](https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/898c7831-836a-40f2-a42e-e0691cfd00f5/cautious-bull-analyst.jpeg?t=1719792346)](https://www.mingdom.co/p/mingdom-capital-2024-q2-update?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=3da2b0d2c07dae08054c334bd9fdb6d64571e5a5&last_resource_guid=Post%3A7a625305-43b4-4747-9342-646607123e5e)
 
@@ -296,11 +296,11 @@ This was a top 10 position that I completely sold in the portfolio. The reason i
 Rather than saying what I think is going to happen, I’ll just share the 3 data points that I monitor regularly for a sense on the market:
 
 1.  Consumer Sentiment Index
-    
+
 2.  Fear & Greed Index
-    
+
 3.  Shiller PE index
-    
+
 
 ![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/7dc23fe0-e756-48f7-ab70-b59eb67d063b/Screenshot_2024-09-29_at_11.41.36.png?t=1727635365)
 
@@ -317,12 +317,12 @@ Shiller PE Ratio: [https://www.multpl.com/shiller-pe](https://www.multpl.com/shi
 **TLDR;**
 
 *   US market is definitely expensive right now. Shiller PE of ~37 whereas the bubble burst in 2021 when it was ~38.
-    
+
 *   Greed is back, this time there’s actually good breadth as it’s no longer the handful of big tech companies driving the rally.
-    
+
 *   Stocks tend to move up in an election year although the last few months before an election is also more volatile.
-    
+
 *   Consumer sentiment is improving and it’s looking increasingly likely that we will have a “soft landing”, aka the forecast of recession is cancelled once again.
-    
+
 
 Personally, I’m cautiously optimistic. I see no reason to take major risks right now but at least in the short term I expect the market to keep going up.

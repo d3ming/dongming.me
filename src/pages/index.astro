@@ -9,7 +9,7 @@ const posts = await getCollection("blog");
 const latestPosts = posts
   .filter((p) => !p.data.draft && !p.data.private)
   .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime())
-  .slice(0, 3);
+  .slice(0, 8);
 ---
 
 <Layout>

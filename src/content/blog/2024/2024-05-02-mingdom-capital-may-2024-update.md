@@ -3,23 +3,25 @@ title: "Mingdom Capital: May 2024 Update"
 description: "Announcing the Mingdom Capital public portfolio!"
 pubDatetime: 2024-05-02T01:24:14.000Z
 author: "Dong Ming"
+draft: false
 heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/2112d8d5-5594-45a5-8138-48e10c446673/Image_Creator_Microsoft_Designer.jpeg?t=1714967055"
 tags:
   - investing; mingdom-capital
+  - import/beehiiv
 ---
 
 ### TLDR;
 
 *   I’m opening my portfolio to the public: [Mingdom Capital on SavvyTrader](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
-    
+
 *   I’m doing this mostly to prove that I can beat the market consistently over the long run. And if not, I hope to find out sooner rather than later.
-    
+
 *   So far so good 🤞 - my portfolio hit top 10 among thousands featured on SavvyTrader last month!
-    
+
 *   Will update portfolio performance on a monthly cadence moving forward
-    
+
 *   Help me spread the word by following me on Twitter and liking [this post](https://x.com/dming/status/1786571847292932285?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
-    
+
 
 ## The Bet
 
@@ -62,13 +64,13 @@ Ultimately, I decided to do it because I want to see what it’s like to be a pr
 The main reasons I chose a platform like SavvyTrader:
 
 1.  **Accountability**: Currently the only investor in my fund beside me is my wife - she is very lenient and doesn’t really care to check my work. By buying and selling in the open, even if I have no subscribers, I’m tricking myself to mentally act as a fiduciary to my investors. In addition, my account’s performance is compared to thousands of other portfolios including investing legends like Warren Buffett and Bill Ackman. If I want to be a pro, I got to be accountable like a pro.
-    
+
 2.  **Performance Tracking**: Built into the platform is portfolio performance tracking over different time horizons and comparisons against benchmarks like SPY.
-    
+
 3.  **Discussion**: Subscribers to my portfolio will get real-time alerts for every trade I place and the rationale behind it. Over time, as I build a larger subscriber base, I hope to engage and discuss investment ideas with a community.
-    
+
 4.  **Passive income**: Help a _struggling_ retiree stay retired today! _Kidding!_
-    
+
 
 ### Portfolio Performance
 
@@ -89,22 +91,22 @@ My portfolio was among the top 10 last month!
 My ideal portfolio looks like:
 
 *   High quality companies with strong and sustainable moats
-    
+
 *   Trading at a fair price based on DCF analysis
-    
+
 *   Concentrated on my areas of competence, which is technology and consumer discretionary.
-    
+
 
 Current allocation / concentration:
 
 *   35 positions but with high top-heavy concentration
-    
+
 *   Top 3 positions accounts for 35% of capital
-    
+
 *   Top 7 positions accounts for more than 50% of capital
-    
+
 *   Conversely, the bottom 10 positions in the portfolio only accounts for a tiny (~5%) of the portfolio. The idea is to have a bunch of smaller bets on high risk / high reward stocks.
-    
+
 
 See my post on [Investment Principles](https://www.mingdom.co/p/investment-principles-2024?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update&last_resource_guid=Post%3A50b92c1b-9475-4ff1-94a1-b0c3265f724d) for more on my guiding principles.
 
@@ -113,11 +115,11 @@ See my post on [Investment Principles](https://www.mingdom.co/p/investment-princ
 Although I try my best to keep the [portfolio](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update) up to date against my real accounts, there are a few key differences:
 
 1.  This portfolio will aim to be fully deployed with little to no cash. This is so it can compare fairly against benchmarks like SPY which will never have cash. This however does not reflect my real asset allocation as I may choose to keep a substantial amount of cash, bonds or other types of assets.
-    
+
 2.  This portfolio can only hold stocks but my real portfolio will use options as well.
-    
+
 3.  This portfolio will trade more frequently as my main aim is to be optimal in asset allocation without consideration of tax efficiency. My real portfolio has most of its assets in a taxable account so I employ tactics like tax-loss harvesting.
-    
+
 
 So the best way to think of this [portfolio](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update) is as if I’m running an ETF with what I consider to be the most optimal stock allocations. It’s going to be close to my own portfolio but never exact.
 
@@ -128,9 +130,9 @@ Finally and most importantly - _nothing I write about or share here can be taken
 With all these disclaimers out of the way, if you’d like to support my journey in beating the S&P over 10 years of public performance by:
 
 1.  Subscribe to [my portfolio](https://trader.mingdom.co?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
-    
+
 2.  Follow me on Twitter and like [this post](https://x.com/dming/status/1786571847292932285?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-may-2024-update)
-    
+
 
  
 
