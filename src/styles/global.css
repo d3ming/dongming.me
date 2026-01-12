@@ -146,7 +146,13 @@ html[data-theme="light"] {
     }
   }
 
+
   .animate-blink {
     animation: blink 1s step-end infinite;
   }
+}
+
+/* Twitter Embeds */
+.twitter-tweet {
+  margin: 1.5rem auto !important;
 }

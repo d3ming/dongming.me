@@ -3,6 +3,7 @@ import "@/styles/global.css";
 import { ClientRouter } from "astro:transitions";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
+import { SITE } from "@/consts";
 
 export interface Props {
   title?: string;
@@ -47,13 +48,14 @@ const {
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL("/avatar.jpg", Astro.url)} />
 <ClientRouter />
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<script is:inline>
+<script is:inline define:vars={{ defaultTheme: SITE.defaultTheme }}>
 const theme = (() => {
 if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 return localStorage.getItem('theme');
 }
-return 'light';
+return defaultTheme;
 })()                                                                        ;
 
 if (theme === 'light') {
@@ -124,7 +126,12 @@ window.addEventListener("resize", updateScrollProgress) ;
 document.addEventListener("astro:page-load", () => {
 createProgressBar()                                  ;
 updateScrollProgress()                               ;
-})                                                   ;
+
+// Reload Twitter widgets if they exist
+if (window.twttr && window.twttr.widgets) {
+window.twttr.widgets.load()                 ;
+}
+})                                          ;
 
 console.log('%c [REF-MATCH] Progress Bar Active ', 'background: #A855F7; color: white;');
 })()                                                                                      ;

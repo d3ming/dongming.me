@@ -6,6 +6,7 @@ export const SITE = {
   title: "TBD | Dong Ming",
   ogImage: "avatar.jpg",
   lang: "en",
+  defaultTheme: "dark",
 };
 
 export const NAV_LINKS = [

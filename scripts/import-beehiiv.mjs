@@ -53,13 +53,13 @@ async function importBeehiiv() {
 
         const title = record.web_title.trim();
         const dateStr = record.created_at;
-        // Format date: YYYY-MM-DD
+        // Format date: YYYY-MM-DD using UTC to match the timestamp
         const date = new Date(dateStr);
-        const year = date.getFullYear();
-        const month = String(date.getMonth() + 1).padStart(2, '0');
-        const day = String(date.getDate()).padStart(2, '0');
+        const year = date.getUTCFullYear();
+        const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(date.getUTCDate()).padStart(2, '0');
         const formattedDate = `${year}-${month}-${day}`;
-        // Add time for pubDatetime (approximate is fine, or noon UTC)
+        // Add time for pubDatetime
         const pubDatetime = date.toISOString();
 
         let slug = '';
@@ -78,13 +78,13 @@ async function importBeehiiv() {
             fs.mkdirSync(outputDir, { recursive: true });
         }
 
-        const filename = `${formattedDate}-${slug}.md`;
+        // Use .mdx extension
+        const filename = `${formattedDate}-${slug}.mdx`;
         const filePath = path.join(outputDir, filename);
 
         const tags = record.content_tags
             ? record.content_tags.split(',').map(t => t.trim()).filter(Boolean)
-            : []; // Default tag logic was removed, now we add import/beehiiv later
-
+            : [];
 
         const description = record.web_subtitle ? record.web_subtitle.trim() : '';
         const heroImage = record.thumbnail_url || '';
@@ -133,10 +133,38 @@ async function importBeehiiv() {
 
         content.find('div:contains("OPEN_TRACKING_PIXEL")').remove();
 
+        // Simplify Twitter/X embeds
+        content.find('a').each((i, el) => {
+            const href = $(el).attr('href');
+            if (!href) return;
+
+            if ((href.includes('twitter.com') || href.includes('x.com')) && href.includes('/status/')) {
+                // If it contains images (likely an embed card), replace with placeholder
+                if ($(el).find('img').length > 0) {
+                    try {
+                        const urlObj = new URL(href);
+                        const cleanUrl = urlObj.origin + urlObj.pathname;
+                        // Placeholder for post-processing - alphanumeric to avoid escaping
+                        $(el).replaceWith(`<p>TWEETEMBEDSTART${cleanUrl}TWEETEMBEDEND</p>`);
+                    } catch (e) {
+                        // ignore
+                    }
+                }
+            }
+        });
+
         let htmlToConvert = content.html() || '';
 
         let markdown = turndownService.turndown(htmlToConvert);
         markdown = markdown.replace(/\n\n\n+/g, '\n\n');
+
+        // Post-process placeholders
+        let hasTweets = false;
+        markdown = markdown.replace(/TWEETEMBEDSTART(.*?)TWEETEMBEDEND/g, (match, url) => {
+            hasTweets = true;
+            return `<Tweet id="${url.trim()}" />`;
+        });
+
         markdown = markdown.trim();
 
         markdown = markdown.split('\n').filter(line => {
@@ -153,7 +181,7 @@ async function importBeehiiv() {
             '---',
             `title: "${title.replace(/"/g, '\\"')}"`,
             `description: "${description.replace(/"/g, '\\"')}"`,
-            `pubDatetime: ${pubDatetime}`, // No quotes usually for yaml date if ISO, but works with quotes too. standard uses ISO.
+            `pubDatetime: ${pubDatetime}`,
             `author: "Dong Ming"`,
             `draft: true`,
         ];
@@ -172,6 +200,12 @@ async function importBeehiiv() {
 
         frontmatter.push('---');
         frontmatter.push('');
+
+        if (hasTweets) {
+            frontmatter.push("import { Tweet } from 'astro-embed';");
+            frontmatter.push('');
+        }
+
         frontmatter.push(markdown);
 
         const result = frontmatter.join('\n');
