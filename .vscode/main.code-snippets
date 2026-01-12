@@ -1,0 +1,54 @@
+{
+    "Astro MDX Frontmatter": {
+        "scope": "markdown,mdx,astro-markdown",
+        "prefix": "fmm",
+        "body": [
+            "---",
+            "title: \"$1\"",
+            "description: \"$2\"",
+            "pubDatetime: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+            "author: \"Dong Ming\"",
+            "draft: true",
+            "tags:",
+            "  - ${3:others}",
+            "---",
+            "",
+            "$0"
+        ],
+        "description": "Insert Astro MDX Frontmatter"
+    },
+    "Import Tweet": {
+        "scope": "markdown,mdx,astro-markdown",
+        "prefix": "imt",
+        "body": [
+            "import { Tweet } from 'astro-embed';",
+            "$0"
+        ],
+        "description": "Import Tweet Component"
+    },
+    "Tweet Embed": {
+        "scope": "markdown,mdx,astro-markdown",
+        "prefix": "tweet",
+        "body": [
+            "<Tweet id=\"$1\" />"
+        ],
+        "description": "Embed a Tweet"
+    },
+    "Import YouTube": {
+        "scope": "markdown,mdx,astro-markdown",
+        "prefix": "imy",
+        "body": [
+            "import { YouTube } from 'astro-embed';",
+            "$0"
+        ],
+        "description": "Import YouTube Component"
+    },
+    "YouTube Embed": {
+        "scope": "markdown,mdx,astro-markdown",
+        "prefix": "yt",
+        "body": [
+            "<YouTube id=\"$1\" />"
+        ],
+        "description": "Embed a YouTube Video"
+    }
+}

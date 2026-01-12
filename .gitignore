@@ -25,7 +25,7 @@ pnpm-debug.log*
 
 # OS / Editor
 .DS_Store
-.vscode
+!.vscode/
 .idea
 *.suo
 *.ntvs

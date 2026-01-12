@@ -1,0 +1,14 @@
+{
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.notes.wordWrap.enabled": true
+  },
+  "[mdx]": {
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80
+  },
+  "files.associations": {
+    "*.mdx": "mdx"
+  }
+}

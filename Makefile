@@ -40,6 +40,9 @@ clean:
 	rm -rf $(BUILD_DIR)
 	rm -rf .astro
 
+post:
+	node scripts/new-post.mjs "$(TITLE)"
+
 convert-mdx:
 	node scripts/convert-md-to-mdx.mjs
 
