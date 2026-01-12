@@ -1,0 +1,97 @@
+---
+title: "Mingdom Capital: 2025 Portfolio Update"
+description: "2024 was a huge win. What will 2025 bring?"
+pubDatetime: 2025-02-02T10:30:09.000Z
+author: "Dong Ming"
+draft: false
+heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/570e742f-6092-4eaa-a71b-ed42767d7e8e/Designer__1_.jpeg?t=1738469625"
+tags:
+  - mingdom-capital
+  - import/beehiiv
+---
+
+import { Tweet } from 'astro-embed';
+
+In this issue:
+
+1.  Portfolio Performance after 1 full year trading publicly
+
+2.  Top 10 Positions
+
+3.  Thoughts on the market
+
+
+## Performance
+
+2024 was another tremendous year for my portfolio. I decided to [share my portfolio and trades publicly last year](https://www.mingdom.co/p/mingdom-capital-may-2024-update?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2025-portfolio-update&_bhlid=f999fd9c484b5eb3db238024c67003e24ce6fe07&last_resource_guid=Post%3Ae3e5924f-9a9d-488b-9cf8-58cc7ac8795f) to prove to myself and shareholders (yes, plural now) that I can sustainably beat the market. Anyone can cherry-pick good performance on the internet on a particular trade or fake screenshot, but it’s much harder to keep a consistent track record publicly verified by a 3rd party. And that’s what the [Mingdom Capital portfolio](https://savvytrader.com/mingdom/mingdom-capital?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2025-portfolio-update&_bhlid=5ed3c4e46969c881ade45985be58bd7c8706317f) on SavvyTrader aims to do.
+
+[![](https://static.savvytrader.com/images/og_discover_big.png)](https://savvytrader.com/mingdom/mingdom-capital?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2025-portfolio-update&_bhlid=3231d6cba9b7c72532831dc4bc1e0f36ddc5fe06)
+
+[Mingdom Capital](https://savvytrader.com/mingdom/mingdom-capital?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2025-portfolio-update&_bhlid=e777cee8a79b7383c86aa2b48d0932c039da1adf)
+
+Use this link to subscribe to track my portfolio live.
+
+savvytrader.com/mingdom/mingdom-capital
+
+It’s officially the 1 year anniversary of the Mingdom Capital (MC) portfolio, as of the time of this writing on Feb 1, 2025. In that time we beat both the SPY and QQQ by a wide margin. **Performance since inception on 2/1/2024 is 39% for MC, compared to SPY at 22% and QQQ and 21%.**
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/c833d16d-8a3f-403e-a62f-ebea5e718ec0/Screenshot_2025-02-01_at_18.40.33.png?t=1738464230)
+
+Performance vs. SPY
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/03213725-8690-47a9-a392-6785e960ed1d/Screenshot_2025-02-01_at_18.40.48.png?t=1738464267)
+
+Performance vs. QQQ
+
+Apparently this also puts me among the top hedge-funds for 2024:
+
+<Tweet id="https://twitter.com/nishantkumar07/status/1874860442373489081" />
+
+<Tweet id="https://twitter.com/hedgevision/status/1877003073614491954" />
+
+Can this outperformance continue? Only time will tell. But with this performance, my wife is more than happy enough to allow me to stay retired for another year =)
+
+## Top 10 positions
+
+GOOGL, META, AMZN, AXP, UBER, MA, NVDA, APP, BKNG, MELI are my current top 10 stock positions. SCYB doesn’t count as it’s just a short term instrument to park some cash for now. Top 10 positions make up over 70% of the portfolio, so we are very concentrated. And that’s on par with the plan, concentrate into quality names.
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6d2f8ac5-50e5-4511-bb1e-12d354c4a529/Screenshot_2025-02-01_at_18.25.56.png?t=1738465848)
+
+Top 10 positions
+
+As you can see, every top 10 position had positive returns except for UBER at -1%. Average return % for the top 10 positions is 57%, with the highest performer at 346%! Applovin (APP) killed last year! It started out as a small bet and then it 4x’d on me. That’s the power of holding onto winners while cutting the losers.
+
+Commentary on the top 10 positions compared to the [last update](https://www.mingdom.co/p/mingdom-capital-2024-q3-update?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2025-portfolio-update&_bhlid=374ce2511315662008061d0a5d37a0b28bbb7a47&last_resource_guid=Post%3Ae3e5924f-9a9d-488b-9cf8-58cc7ac8795f) at end of Q3 2024:
+
+*   **GOOGL**, **META**, **AMZN**: These remain the top 3 positions in my portfolio and nothing else is that close… But I trimmed GOOGL allocation to be closer to META and AMZN since I overbought when it dropped to $160 and now it’s at ATH of $204. I no longer feel Google is outrageously mis-priced but it remains my number 1 position.
+
+*   **MA, V**: I dropped Visa (V) for Mastercard (MA). It’s really a toss up, but given American Express (AXP) is already a large position, I didn’t think having both V and MA helped me with diversification and ultimately chose MA.
+
+*   **UBER**, **TSLA**: I sold TSLA for a very nice profit (2-3x from buying at $150-160) and put that money towards Uber. I think the market is very wrong to think if Waymo or Tesla reach full autonomy that Uber will die. Some are comparing Uber to Blockbuster when Netflix is coming. I continue to think full autonomy will sooner or later be commoditized (many companies will achieve it) but Uber will still be the dominant market place for ride-share and delivery and net-net benefit from this. Also Waymo is wayyyyyyymo ahead of Tesla in achieving full autonomy, and they are owned by Google. Waymo partners with Uber and is expanding its partnership in 2025. Going into 2025, I think Uber is one of the most mis-priced large-cap stocks.
+
+*   **NVDA**: I trimmed my position in NVDA above $140 and bought back more recently as it dropped to $120. Overall it’s a smaller % of the portfolio due both the trimming and the price drop (from 7.6% to 5.1%). I would pick up more if it drops more because I think the recent market reaction to news around DeepSeek and tariffs are overblown and it creates an opportunity. Nvidia is a cyclical stock but this is probably the largest investment cycle ever and I don’t think we are anywhere close to the peak. I’m looking forward to the next earnings call at the end of February to confirm or re-evaluate my thesis.
+
+*   **APP**: This one makes me anxious because it went from $80 to over $400 at one point last year. My biggest winner of the year by far. I trimmed some on the way up but it still ended up being a top 10 position simply due to price appreciation.
+
+*   **LULU**: Well I was right to keep holding and making it a top 10 last time. Since dropping to the $200s they have now bounced to over $400. I over-allocated in it before since it was so cheap, and I sold some on the way up so it’s no longer a top 10. Allocation went from 2.2% to 1.8%.
+
+*   **BRKB**: Dropped Berkshire (BRKB). I held it mostly as a hedge against big tech, it was almost like a cash or bond instrument. I decided to sell it and instead just hold SCYB that is actually a High Yield Bond ETF with predictable income.
+
+
+## Thoughts on the market and what I’m planning to do in 2025
+
+Broadly speaking, the US market is quite expensive. From the PE ratio below, we can see that it’s very close to the bubble at the end of 2021. I still remember the feeling when that burst and how terrible 2022 was for me so I’m personally positioning my real portfolio quite cautious.
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/32c0989d-84d2-4cbc-b595-fb81c906a4bf/Screenshot_2025-02-01_at_20.25.48.png?t=1738470372)
+
+Shiller PE Ratio - a measure of stock market valuation
+
+The public MC portfolio is the stocks portion of my portfolio but my full personal portfolio has significant cash and short term assets (i.e. bonds, private credit) and I’m hedging the overall market with options. This means if the market keeps going up, my real portfolio won’t make as much money, but at least I shouldn’t get totally pwned like I was in 2022 when the last bubble burst.
+
+I don’t think we are in a broad bubble yet, and that is mainly because corporate earnings and the US consumer look strong. And even if we are in a bubble, I think there will be pockets of the stock that will be undervalued or investable. For example, software companies like CRM and SNOW underperformed the market and was broadly left out of the rally last year until very recently.
+
+I do however think the world in general is becoming less predictable. I would guess we are going to face more volatility in the stock market in the coming year than the last. There are also signs of irrationality popping up… people seem to be more willing to gamble and chase meme cryptocurrencies and stocks just like in 2021. When the rug gets pulled on these there will be a world of hurt.
+
+For the high quality stocks I do own, I currently don’t plan to sell them as I have other ways to hedge. I want to remind myself that with volatility comes opportunity. And the mark of a great investor is the ability to see the truth in moments of fear and take these opportunities. Until they present themselves though I would be wise to be patient. That said… it is also the mark of a great investor to keep an open mind and being able to change my mind, even for my highest conviction positions currently. So there definitely could come a time that I make major changes to the portfolio but I hope it won’t be out of fear but rather due to better information or a better opportunity elsewhere.
+
+Happy year of the Snake. Let’s see what 2025 brings!

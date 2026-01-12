@@ -1,0 +1,328 @@
+---
+title: "Mingdom Capital: 2024 Q3 Update"
+description: "Cautiously optimistic... back to all time high!"
+pubDatetime: 2024-09-28T23:20:05.000Z
+author: "Dong Ming"
+draft: false
+heroImage: "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f269c495-5221-478c-ae6a-46a24a1b6fe0/Microsoft_Designer_Image__2_.jpeg?t=1727636456"
+tags:
+  - mingdom-capital
+  - import/beehiiv
+---
+
+## What happened in the last 3 months?
+
+Since the [Q2 update](https://www.mingdom.co/p/mingdom-capital-2024-q2-update?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=2492f6b6313058009939adcd5ef0ee6282c0ac80&last_resource_guid=Post%3A7a625305-43b4-4747-9342-646607123e5e):
+
+*   Major corrections bringing back some volatility in the market. Most notable was “Black Monday” on August 5 where the volatility index for S&P (VIX) spiked to over 60 during the day!
+
+*   Fed started cutting rates - first cut was 50bp, which is slightly on the high end of what is expected by the market.
+
+*   China announced stimulus for their economy and stock market. Chinese stocks like BABA and BIDU went up 20% last week.
+
+
+[![](https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/898c7831-836a-40f2-a42e-e0691cfd00f5/cautious-bull-analyst.jpeg?t=1719792346)](https://www.mingdom.co/p/mingdom-capital-2024-q2-update?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=3da2b0d2c07dae08054c334bd9fdb6d64571e5a5&last_resource_guid=Post%3A7a625305-43b4-4747-9342-646607123e5e)
+
+ 
+
+[Mingdom Capital: 2024 Q2 Update](https://www.mingdom.co/p/mingdom-capital-2024-q2-update?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=ab5bef07b6d02ecaccb1c5f6b24322a7705911ed&last_resource_guid=Post%3A7a625305-43b4-4747-9342-646607123e5e)
+
+The bull run continues?
+
+www.mingdom.co/p/mingdom-capital-2024-q2-update
+
+## Portfolio Review
+
+### Performance
+
+The [Mingdom Capital portfolio](https://savvytrader.com/mingdom/mingdom-capital?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=c84ced2da5e6053ed94c334a03228d24d04baad1) is beating both the SPY and QQQ since inception since Feb 1 this year. I’m happy with the performance but there were some painful drawdowns during the two dips in August and September. The portfolio is closer to QQQ since it has a lot more tech stocks and it appears to be higher risk/beta when compared to SPY but more stable compared to QQQ.
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/777e40fe-b4e0-42d7-a6dc-f7f823ad9777/Screenshot_2024-09-28_at_09.25.42.png?t=1727540766)
+
+Fund performance YTD compared to SPY (since inception on Feb 1, 2024)
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/1bd8f07d-ba10-4280-9c95-4a073930e95b/Screenshot_2024-09-28_at_09.44.11.png?t=1727541862)
+
+Fund performance vs. QQQ YTD
+
+### Allocation
+
+Current top 10 positions accounts for 70% of total portfolio, which is about 10% more concentrated than last quarter. There were 2 corrections in the last quarter (early August and early September) which hit tech and semiconductor stocks the hardest. This gave me opportunities to buy the dip in high conviction stocks.
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a1b187e4-0a47-4b9b-9498-aa3477b8da74/Screenshot_2024-09-28_at_09.27.31.png?t=1727540862)
+
+Top 10 positions as of Sep 27, 2024
+
+_Top holdings compared to Q2:_
+
+**Ticker**
+
+Current %
+
+Previous %
+
+Diff %
+
+**GOOGL**
+
+16.0
+
+12.8
+
++3.2
+
+**META**
+
+12.6
+
+9.5
+
++3.1
+
+**AMZN**
+
+12.3
+
+10.9
+
++1.4
+
+**AXP**
+
+9.2
+
+7.9
+
++1.3
+
+**NVDA**
+
+7.6
+
+5.0
+
++2.6
+
+**V**
+
+5.7
+
+3.7
+
++2.0
+
+**UBER**
+
+2.9
+
+1.5
+
++1.4
+
+**MELI**
+
+2.5
+
+2.6
+
+\-0.1
+
+**AMAT**
+
+2.3
+
+2.1
+
++0.2
+
+**LULU**
+
+2.2
+
+1.0
+
++1.2
+
+BRKB
+
+2.2
+
+6.4
+
+\-4.2
+
+AAPL
+
+1.5
+
+2.6
+
+\-1.1
+
+CRM
+
+0
+
+2.4
+
+\-2.4
+
+Select commentary below…
+
+**Google (GOOGL)**
+
+Google continues to be my biggest position. The stock dropped from $190 to $160 from the recent highs in July, and I had to pick up some more.
+
+I think the sentiment against this stock is still quite bad and they are trading at a lower multiple than other big tech. The perception is that Google is losing ground in Search as well as AI to recent competitors like OpenAI and Perplexity. The reality is that Search revenue continues to grow, in fact it’s growing faster than even Youtube in the most recent quarter.
+
+I believe they have tons of optionality to benefit from AI. Not just genAI but their other bets into autonomous vehicles (Waymo) and drug discovery is starting to pay off. They have the deepest bench of AI researchers, and unlike OpenAI they aren’t bleeding top talent left and right.
+
+All this to say, I think they are trading at a discount. It’s like Microsoft during the Ballmer days or Meta just a couple of years ago. If Sundar gets replaced as CEO the stock would go up immediately by 20%.
+
+_Table below compares the “Mag 7” over key valuation and growth metrics:_
+
+Ticker
+
+Fwd P/E
+
+P/CF
+
+Revenue Growth YoY
+
+EPS Growth
+
+GOOGL
+
+18.7
+
+20.1
+
+13.4%
+
+47.7%
+
+META
+
+23.5
+
+22.4
+
+24.3%
+
+128.3%
+
+AMZN
+
+32.8
+
+20.8
+
+12.3%
+
+229.1%
+
+NVDA
+
+30.8
+
+54.7
+
+194.7%
+
+415.0%
+
+AAPL
+
+30.4
+
+31.0
+
+4.9%
+
+10.4%
+
+TSLA
+
+81.9
+
+47.8
+
+1.4%
+
+0.85%
+
+MSFT
+
+28.3
+
+28.8
+
+15.7%
+
+21.9%
+
+You can see that Google is the cheapest of mag 7 by its forward P/E ratio. In fact, if we compare Google to Microsoft, it’s significantly cheaper on a P/E basis even though it’s growing its top line revenue at roughly the same rate, and growing earnings much faster. This is what I mean when I say that the market discounting Google and buying into the story that they are losing the AI and Search war.
+
+**Meta (META)**
+
+Meta overtook Amazon as the second largest position in the portfolio, although just barely. What can I say, other than Zuck is back and cooler than ever =P
+
+But seriously, their financials look great! Just look at the mag 7 table above. Why are they cheaper than Microsoft when they are growing way faster?
+
+**Nvidia (NVDA)**
+
+Nvidia was highly volatile last quarter. It went below $100 at one point and it’s now back to $120. I bought more on the dip and it’s now 7.6% of the portfolio. For reference, they account for 6.2% of SPY, so I’m really not that overweight NVDA compared to the market.
+
+They are a cyclical company and at some point their revenue is going to slow… but there are no signs of this right now. Their customers can’t get enough of their chips and revenue growth of almost 200% is just insane. I really don’t think they are that expensive given their growth.
+
+**Uber (UBER)**
+
+A new top 10 position. They’ve turned profitable and starting to grow their cash flow.
+
+The market seem to think that AV companies will kill Uber and I think it’s quite the opposite. I believe they are going to benefit from Autonomous Vehicles (AV) as most of these companies will need Uber as their market place. Once AV become ubiquitous, Uber’s unit economics should improve as well.
+
+A key signal to watch for is how many AV companies partner with Uber. Right now the leaders in the space are all partnered with Uber, including Waymo and Cruise. Tesla currently isn’t a partner but they also don’t really have real autonomous vehicles either. I’m excited for Tesla’s Robotaxi event on 10/10 to see what they announce.
+
+**Lululemon (LULU)**
+
+I liked it in the $300s and it fell to almost $200 last quarter so I picked up more and it’s now a top 10 position. Most of the growth for this company is coming from China and international. Assuming the China stimulus works for their economy, they stand to benefit. That said, this stock is on the edge from being cut from top 10. I just overbought in the portfolio because it seemed too cheap in the moment.
+
+**Salesforce (CRM)**
+
+This was a top 10 position that I completely sold in the portfolio. The reason is mostly that I think there are better opportunities elsewhere. The portfolio is already heavy on tech stocks and I didn’t think it helped with my diversification. It’s probably cheap or reasonably priced, but they are facing major competition from newcomers like [Monday.com](http://Monday.com?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=e885d48e9db4cf7329d694bcb2a03375983b381b) (MNDY) and there is a narrative going around that genAI will make it easier for customers to roll out their own solutions (although I don’t really buy that). Regardless, the fact is that their growth slowed a lot and I’m just no longer as convinced they are cheap.
+
+## Thoughts on the market moving forward
+
+Rather than saying what I think is going to happen, I’ll just share the 3 data points that I monitor regularly for a sense on the market:
+
+1.  Consumer Sentiment Index
+
+2.  Fear & Greed Index
+
+3.  Shiller PE index
+
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/7dc23fe0-e756-48f7-ab70-b59eb67d063b/Screenshot_2024-09-29_at_11.41.36.png?t=1727635365)
+
+Consumer Sentiment Index: [http://www.sca.isr.umich.edu](https://www.sca.isr.umich.edu/?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=a648675620f7ae1b6225d246a7ad2754839eaf07)
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2240ef72-d903-41c2-a42c-9c2e6db85341/Screenshot_2024-09-29_at_11.44.22.png?t=1727635472)
+
+Fear & Greed Index: [https://www.cnn.com/markets/fear-and-greed](https://www.cnn.com/markets/fear-and-greed?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=c284d5b44884751d4f63c43d22caa3db545447d7)
+
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2e770134-f2e9-4ed2-8d81-6b6edd5fee71/Screenshot_2024-09-29_at_11.45.37.png?t=1727635549)
+
+Shiller PE Ratio: [https://www.multpl.com/shiller-pe](https://www.multpl.com/shiller-pe?utm_source=www.mingdom.co&utm_medium=newsletter&utm_campaign=mingdom-capital-2024-q3-update&_bhlid=c5637b321fca9f35c39a04f008d1a5230dd04953)
+
+**TLDR;**
+
+*   US market is definitely expensive right now. Shiller PE of ~37 whereas the bubble burst in 2021 when it was ~38.
+
+*   Greed is back, this time there’s actually good breadth as it’s no longer the handful of big tech companies driving the rally.
+
+*   Stocks tend to move up in an election year although the last few months before an election is also more volatile.
+
+*   Consumer sentiment is improving and it’s looking increasingly likely that we will have a “soft landing”, aka the forecast of recession is cancelled once again.
+
+
+Personally, I’m cautiously optimistic. I see no reason to take major risks right now but at least in the short term I expect the market to keep going up.
