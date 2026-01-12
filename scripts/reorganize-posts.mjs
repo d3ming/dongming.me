@@ -22,23 +22,25 @@ function getFrontmatter(content) {
     return obj;
 }
 
+import readline from 'node:readline';
+
+const moves = [];
+
 function walk(dir) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
     for (const entry of entries) {
         const fullPath = path.join(dir, entry.name);
         if (entry.isDirectory()) {
             walk(fullPath);
-            // Clean up empty directories
-            if (fs.readdirSync(fullPath).length === 0) {
-                fs.rmdirSync(fullPath);
-            }
+            // We'll clean up empty directories after moving files, in a second pass if needed,
+            // but for safety let's skip directory deletion in the dry run/planning phase
         } else if (entry.name.endsWith('.md') || entry.name.endsWith('.mdx')) {
-            reorganizeFile(fullPath, entry.name);
+            planReorganizeFile(fullPath, entry.name);
         }
     }
 }
 
-function reorganizeFile(filePath, fileName) {
+function planReorganizeFile(filePath, fileName) {
     const content = fs.readFileSync(filePath, 'utf-8');
     const fm = getFrontmatter(content);
 
@@ -58,9 +60,7 @@ function reorganizeFile(filePath, fileName) {
     }
 
     const yearDir = path.join(BLOG_DIR, year);
-    if (!fs.existsSync(yearDir)) {
-        fs.mkdirSync(yearDir, { recursive: true });
-    }
+    // Don't create dir yet
 
     let newName = fileName;
     if (dateObj && !isNaN(dateObj.getTime())) {
@@ -71,16 +71,61 @@ function reorganizeFile(filePath, fileName) {
         let slug = fm.slug || fileName.replace(/\.mdx?$/, '');
         slug = slug.replace(/^(\d{4}-\d{2}-\d{2})-?/, '').replace(/^(\d{8})-?/, '');
 
-        newName = `${yyyy}-${mm}-${dd}-${slug}.md`;
+        const ext = path.extname(fileName);
+        newName = `${yyyy}-${mm}-${dd}-${slug}${ext}`;
     }
 
     const newPath = path.join(yearDir, newName);
 
     if (filePath !== newPath) {
-        console.log(`Moving ${path.relative(BLOG_DIR, filePath)} -> ${year}/${newName}`);
-        fs.renameSync(filePath, newPath);
+        moves.push({ from: filePath, to: newPath, destDir: yearDir });
     }
 }
 
 walk(BLOG_DIR);
-console.log('Reorganization complete.');
+
+if (moves.length === 0) {
+    console.log('No posts need safe reorganizing.');
+    process.exit(0);
+}
+
+console.log('The following changes will be made:');
+moves.forEach(m => {
+    console.log(`${path.relative(BLOG_DIR, m.from)} -> ${path.relative(BLOG_DIR, m.to)}`);
+});
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('\nDo you want to proceed? (y/N) ', (answer) => {
+    if (answer.toLowerCase() === 'y') {
+        moves.forEach(m => {
+            if (!fs.existsSync(m.destDir)) {
+                fs.mkdirSync(m.destDir, { recursive: true });
+            }
+            fs.renameSync(m.from, m.to);
+            console.log(`Moved: ${path.basename(m.from)}`);
+        });
+
+        // Cleanup empty dirs pass
+        // Simple implementation: check original dirs of moved files
+        const originalDirs = [...new Set(moves.map(m => path.dirname(m.from)))];
+        originalDirs.forEach(dir => {
+            try {
+                if (fs.existsSync(dir) && fs.readdirSync(dir).length === 0) {
+                    fs.rmdirSync(dir);
+                    console.log(`Removed empty dir: ${path.relative(BLOG_DIR, dir)}`);
+                }
+            } catch (e) {
+                // ignore
+            }
+        });
+
+        console.log('Reorganization complete.');
+    } else {
+        console.log('Operation cancelled.');
+    }
+    rl.close();
+});

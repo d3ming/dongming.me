@@ -39,3 +39,11 @@ check:
 clean:
 	rm -rf $(BUILD_DIR)
 	rm -rf .astro
+
+convert-mdx:
+	node scripts/convert-md-to-mdx.mjs
+
+organize-posts:
+	$(NPM) run organize:posts
+
+tidy: organize-posts convert-mdx

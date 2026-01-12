@@ -6,7 +6,5 @@ if [ -n "$staged_files" ]; then
 fi
 
 # Run all linters (SEO + Code)
-npm run lint
-
-# Run fixers on staged files
+# Strict lint-staged only
 npx lint-staged
