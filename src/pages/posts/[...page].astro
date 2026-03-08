@@ -1,0 +1,310 @@
+---
+import { getCollection } from "astro:content";
+import type { GetStaticPaths, Page } from "astro";
+import Card from "@/components/Card.astro";
+import Layout from "@/layouts/Layout.astro";
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const allPosts = await getCollection("blog");
+
+  // Sort posts by date
+  const sortedPosts = allPosts.sort(
+    (a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime(),
+  );
+
+  // Filter based on environment
+  // PROD: Show only published posts (no drafts, no private)
+  // DEV: Show all posts
+  const postsToDisplay = sortedPosts.filter((p) => {
+    if (import.meta.env.DEV) return true;
+    return !p.data.draft && !p.data.private;
+  });
+
+  return paginate(postsToDisplay, { pageSize: 15 });
+};
+
+interface Props {
+  page: Page<any>;
+}
+
+const { page } = Astro.props;
+---
+
+<Layout title="Posts | TBD">
+  <section class="py-12 flex flex-col gap-12">
+    <div>
+      <div
+        class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12"
+      >
+        <h1 class="text-3xl font-bold tracking-tight italic">Posts</h1>
+
+        <!-- Search Input -->
+        <div class="relative w-full md:w-72 group">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search posts, 'drafts'..."
+            class="w-full bg-background border border-border px-4 py-2 font-mono text-sm focus:outline-none focus:border-accent/50 transition-colors"
+          />
+          <div
+            class="absolute right-3 top-2.5 text-muted-foreground/30 group-focus-within:text-accent/50 transition-colors pointer-events-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"
+              ></path></svg
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Results (Hidden by default) -->
+      <div id="search-results" class="hidden">
+        <div
+          class="flex items-center gap-2 mb-8 text-sm font-mono text-muted-foreground"
+        >
+          <span id="search-count">0</span> results found for "<span
+            id="search-query"></span>"
+          <button
+            id="clear-search"
+            class="ml-auto text-accent hover:underline cursor-pointer"
+            >Clear</button
+          >
+        </div>
+        <ul id="search-results-list" class="divide-y divide-border"></ul>
+      </div>
+
+      <!-- Paginated List -->
+      <div id="paginated-content">
+        {
+          page.data.length > 0 ? (
+            <ul class="divide-y divide-border">
+              {page.data.map((post) => (
+                <Card
+                  href={`/posts/${post.id}`}
+                  title={post.data.title}
+                  description={post.data.description}
+                  pubDate={post.data.pubDatetime}
+                  draft={post.data.draft}
+                  privatePost={post.data.private}
+                />
+              ))}
+            </ul>
+          ) : (
+            <p class="text-muted-foreground italic">
+              No posts yet. Check back soon.
+            </p>
+          )
+        }
+
+        <!-- Pagination Controls -->
+        {
+          page.lastPage > 1 && (
+            <nav class="flex items-center justify-between mt-12 pt-8 border-t border-border font-mono text-sm">
+              {page.url.prev ? (
+                <a
+                  href={page.url.prev}
+                  class="text-accent hover:underline flex items-center gap-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                  Previous
+                </a>
+              ) : (
+                <span class="text-muted-foreground opacity-50 flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                  Previous
+                </span>
+              )}
+
+              <span class="text-muted-foreground">
+                Page {page.currentPage} of {page.lastPage}
+              </span>
+
+              {page.url.next ? (
+                <a
+                  href={page.url.next}
+                  class="text-accent hover:underline flex items-center gap-2"
+                >
+                  Next
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </a>
+              ) : (
+                <span class="text-muted-foreground opacity-50 flex items-center gap-2">
+                  Next
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </span>
+              )}
+            </nav>
+          )
+        }
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // Simple search implementation
+  let searchData: any[] = [];
+
+  function getElements() {
+    return {
+      searchInput: document.getElementById("search-input") as HTMLInputElement,
+      searchResults: document.getElementById("search-results"),
+      paginatedContent: document.getElementById("paginated-content"),
+      resultsList: document.getElementById("search-results-list"),
+      searchCount: document.getElementById("search-count"),
+      searchQuery: document.getElementById("search-query"),
+      clearSearch: document.getElementById("clear-search"),
+    };
+  }
+
+  async function initSearch() {
+    const el = getElements();
+    if (!el.searchInput) return;
+
+    // Load search index
+    try {
+      const response = await fetch("/posts.json");
+      searchData = await response.json();
+    } catch (e) {
+      console.error("Failed to load search index", e);
+      return;
+    }
+
+    el.searchInput.addEventListener("input", (e) => {
+      const query = (e.target as HTMLInputElement).value.toLowerCase();
+
+      if (query.length > 0) {
+        performSearch(query);
+      } else {
+        showPaginated();
+      }
+    });
+
+    el.clearSearch?.addEventListener("click", () => {
+      el.searchInput.value = "";
+      showPaginated();
+    });
+  }
+
+  function performSearch(query: string) {
+    const el = getElements();
+
+    // Special filters
+    const showDraftsOnly = query === "draft" || query === "drafts";
+    const showSecretsOnly =
+      query === "secret" || query === "secrets" || query === "private";
+
+    const results = searchData.filter((post) => {
+      if (showDraftsOnly) return post.draft;
+      if (showSecretsOnly) return post.private;
+
+      return (
+        post.title.toLowerCase().includes(query) ||
+        post.description.toLowerCase().includes(query) ||
+        post.tags.some((tag: string) => tag.toLowerCase().includes(query))
+      );
+    });
+
+    if (el.resultsList && el.searchResults && el.paginatedContent) {
+      el.resultsList.innerHTML = results
+        .map(
+          (post) => `
+        <li class="group list-none">
+          <a href="/posts/${post.id}" class="block py-4 outline-none">
+            <div class="flex items-baseline justify-between gap-4 mb-2">
+              <h3 class="text-base font-bold group-hover:text-accent transition-colors decoration-accent/30 decoration-2 underline-offset-4 group-hover:underline truncate flex-1 flex items-center gap-2">
+                ${post.draft ? '<span class="text-[10px] font-mono leading-none uppercase px-1.5 py-1 border border-red-500/30 text-red-500/70 rounded shrink-0">Draft</span>' : ""}
+                ${post.private ? '<span class="text-[10px] font-mono leading-none uppercase px-1.5 py-1 border border-purple-500/30 text-purple-500/70 rounded shrink-0">Secret</span>' : ""}
+                ${post.title}
+              </h3>
+              <time class="text-xs font-mono text-muted-foreground whitespace-nowrap opacity-60 group-hover:opacity-100 transition-opacity">
+                ${post.formattedDate}
+              </time>
+            </div>
+            <p class="text-sm text-muted-foreground/70 line-clamp-2 leading-relaxed group-hover:text-muted-foreground transition-colors">
+              ${post.description}
+            </p>
+          </a>
+        </li>
+      `,
+        )
+        .join("");
+
+      if (el.searchCount)
+        el.searchCount.textContent = results.length.toString();
+      if (el.searchQuery) el.searchQuery.textContent = query;
+
+      el.searchResults.classList.remove("hidden");
+      el.paginatedContent.classList.add("hidden");
+    }
+  }
+
+  function showPaginated() {
+    const el = getElements();
+    if (el.searchResults && el.paginatedContent) {
+      el.searchResults.classList.add("hidden");
+      el.paginatedContent.classList.remove("hidden");
+    }
+  }
+
+  // Initialize
+  initSearch();
+  document.addEventListener("astro:after-swap", initSearch);
+</script>

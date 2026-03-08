@@ -4,9 +4,11 @@ export interface Props {
   title: string;
   description: string;
   pubDate: Date;
+  draft?: boolean;
+  privatePost?: boolean;
 }
 
-const { href, title, description, pubDate } = Astro.props;
+const { href, title, description, pubDate, draft, privatePost } = Astro.props;
 
 const formattedDate = pubDate.toLocaleDateString("en-us", {
   year: "numeric",
@@ -16,19 +18,40 @@ const formattedDate = pubDate.toLocaleDateString("en-us", {
 ---
 
 <li class="group list-none">
-<a href={href} class="block py-4 outline-none">
-<div class="flex items-baseline justify-between gap-4 mb-2">
-<h3 class="text-base font-bold group-hover:text-accent transition-colors decoration-accent/30 decoration-2 underline-offset-4 group-hover:underline truncate flex-1">
-{title}
-</h3>
-<time datetime={pubDate.toISOString()} class="text-xs font-mono text-muted-foreground whitespace-nowrap opacity-60 group-hover:opacity-100 transition-opacity">
-{formattedDate}
-</time>
-</div>
-{description && (
-<p class="text-sm text-muted-foreground/70 line-clamp-2 leading-relaxed group-hover:text-muted-foreground transition-colors">
-{description}
-</p>
-)}
-</a>
+  <a href={href} class="block py-4 outline-none">
+    <div class="flex items-baseline justify-between gap-4 mb-2">
+      <h3
+        class="text-base font-bold group-hover:text-accent transition-colors decoration-accent/30 decoration-2 underline-offset-4 group-hover:underline truncate flex-1 flex items-center gap-2"
+      >
+        {
+          draft && (
+            <span class="text-[10px] font-mono leading-none uppercase px-1.5 py-1 border border-red-500/30 text-red-500/70 rounded shrink-0">
+              Draft
+            </span>
+          )
+        }
+        {
+          privatePost && (
+            <span class="text-[10px] font-mono leading-none uppercase px-1.5 py-1 border border-purple-500/30 text-purple-500/70 rounded shrink-0">
+              Secret
+            </span>
+          )
+        }
+        {title}
+      </h3>
+      <time
+        datetime={pubDate.toISOString()}
+        class="text-xs font-mono text-muted-foreground whitespace-nowrap opacity-60 group-hover:opacity-100 transition-opacity"
+      >
+        {formattedDate}
+      </time>
+    </div>
+    {
+      description && (
+        <p class="text-sm text-muted-foreground/70 line-clamp-2 leading-relaxed group-hover:text-muted-foreground transition-colors">
+          {description}
+        </p>
+      )
+    }
+  </a>
 </li>
