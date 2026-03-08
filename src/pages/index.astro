@@ -9,48 +9,164 @@ const posts = await getCollection("blog");
 const latestPosts = posts
   .filter((p) => !p.data.draft && !p.data.private)
   .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime())
-  .slice(0, 8);
+  .slice(0, 3);
+
+// Pinned posts from the blog collection
+const pinnedPosts = posts
+  .filter((p) => p.data.pinned && !p.data.draft && !p.data.private)
+  .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime())
+  .map((p) => ({
+    title: p.data.title,
+    desc: p.data.description,
+    href: `/posts/${p.id}`,
+  }));
+
+// Hardcoded external links or special projects
+const hardcodedShowcase = [
+  {
+    title: "Mingdom Capital",
+    desc: "My investment portfolio",
+    href: "https://capital.mingdom.co",
+  },
+];
+
+// Combine them into a single Showcase array
+const SHOWCASE = [...hardcodedShowcase, ...pinnedPosts];
 ---
 
 <Layout>
-<section class="py-12">
-<div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-12">
-<div class="w-32 h-32 rounded-2xl bg-accent/10 border-2 border-accent/20 flex items-center justify-center flex-shrink-0 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] transition-all duration-500 overflow-hidden group">
-<img src="/avatar.jpg" alt="Dong Ming" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
-</div>
-<div class="flex-1 text-center sm:text-left">
-<h1 class="text-3xl font-bold mb-4 tracking-tight">
-Hi, I'm <a href="https://x.com/dming" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline decoration-accent/30 decoration-2 underline-offset-4">@dming</a>.
-</h1>
-<p class="text-lg text-muted-foreground mb-6 leading-relaxed">
-Iterating daily. <span class="text-accent font-medium">To Be Determined.</span>
-</p>
-<Socials />
-</div>
-</div>
+  <section class="py-12">
+    <div
+      class="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-12"
+    >
+      <div
+        class="w-32 h-32 rounded-2xl bg-accent/10 border-2 border-accent/20 flex items-center justify-center flex-shrink-0 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] transition-all duration-500 overflow-hidden group"
+      >
+        <img
+          src="/avatar.jpg"
+          alt="Dong Ming"
+          class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+        />
+      </div>
+      <div class="flex-1 text-center sm:text-left">
+        <h1 class="text-3xl font-bold mb-6 tracking-tight">
+          Hi, I'm <a
+            href="https://x.com/dming"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent hover:underline decoration-accent/30 decoration-2 underline-offset-4"
+            >@dming</a
+          >.
+        </h1>
+        <Socials />
+      </div>
+    </div>
 
-<Hr />
+    <Hr />
 
-<div class="mt-16">
-<div class="flex items-baseline justify-between mb-8">
-<h2 class="text-xl font-bold tracking-tight uppercase text-muted-foreground">Latest Writing</h2>
-<a href="/posts" class="text-xs font-mono hover:text-accent transition-colors underline underline-offset-4">View All</a>
-</div>
+    <div class="mt-16 mb-16">
+      <h2
+        class="text-xl font-bold tracking-tight uppercase text-muted-foreground mb-8"
+      >
+        Showcase
+      </h2>
+      <ul
+        class="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-accent/20 scrollbar-track-transparent"
+      >
+        {
+          SHOWCASE.map((item) => {
+            const isExternal = item.href.startsWith("http");
+            return (
+              <li class="shrink-0 w-72 sm:w-80 snap-start">
+                <a
+                  href={item.href}
+                  target={isExternal ? "_blank" : undefined}
+                  rel={isExternal ? "noopener noreferrer" : undefined}
+                  class="block p-6 h-full rounded-lg border border-border bg-background hover:bg-accent/10 hover:border-accent/50 transition-all duration-300 group"
+                >
+                  <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-lg font-bold text-foreground group-hover:text-accent transition-colors">
+                      {item.title}
+                    </h3>
+                    {isExternal ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="text-muted-foreground group-hover:text-accent transition-colors opacity-50"
+                      >
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                      </svg>
+                    ) : (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="text-muted-foreground group-hover:text-accent transition-colors opacity-50"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                      </svg>
+                    )}
+                  </div>
+                  <p class="text-sm text-muted-foreground mt-2 leading-relaxed font-mono">
+                    {item.desc}
+                  </p>
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
 
-{latestPosts.length > 0 ? (
-<ul class="divide-y divide-border">
-{latestPosts.map((post) => (
-<Card
-href={`/posts/${post.id}`}
-title={post.data.title}
-description={post.data.description}
-pubDate={post.data.pubDatetime}
-/>
-))}
-</ul>
-) : (
-<p class="text-muted-foreground italic">No posts yet. Stay tuned for updates.</p>
-)}
-</div>
-</section>
+    <Hr />
+
+    <div class="mt-16">
+      <div class="flex items-baseline justify-between mb-8">
+        <h2
+          class="text-xl font-bold tracking-tight uppercase text-muted-foreground"
+        >
+          Latest Writing
+        </h2>
+        <a
+          href="/posts"
+          class="text-xs font-mono hover:text-accent transition-colors underline underline-offset-4"
+          >View All</a
+        >
+      </div>
+
+      {
+        latestPosts.length > 0 ? (
+          <ul class="divide-y divide-border">
+            {latestPosts.map((post) => (
+              <Card
+                href={`/posts/${post.id}`}
+                title={post.data.title}
+                description={post.data.description}
+                pubDate={post.data.pubDatetime}
+              />
+            ))}
+          </ul>
+        ) : (
+          <p class="text-muted-foreground italic">
+            No posts yet. Stay tuned for updates.
+          </p>
+        )
+      }
+    </div>
+  </section>
 </Layout>

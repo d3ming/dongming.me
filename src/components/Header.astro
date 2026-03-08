@@ -3,95 +3,105 @@ import { NAV_LINKS } from "@/consts";
 ---
 
 <header class="py-10">
-<nav class="flex justify-between items-center">
-<!-- 🎨 LOGO PLAYGROUND - Uncomment ONE option below -->
+    <nav class="flex justify-between items-center">
+        <a
+            href="/"
+            class="group relative text-xl font-bold font-mono tracking-tighter hover:text-accent transition-colors inline-flex items-center gap-[2px]"
+        >
+            <span class="text-muted-foreground mr-1">~/</span>dongming<span
+                class="text-accent group-hover:text-foreground transition-colors"
+                >.me</span
+            >
+            <span
+                class="inline-block w-[8px] h-[1.2em] bg-accent animate-blink translate-y-[0.05em] ml-1 group-hover:bg-foreground transition-colors"
+            ></span>
+        </a>
+        <div class="flex items-center space-x-6 text-sm font-medium">
+            {
+                NAV_LINKS.map((link) => {
+                    const pathname =
+                        Astro.url.pathname.replace(/\/$/, "") || "/";
+                    const isActive =
+                        link.href === "/"
+                            ? pathname === "/"
+                            : pathname.startsWith(link.href);
 
-<!-- OPTION 1: TBD.ong -->
-<!-- <a href="/" class="group text-xl font-bold font-mono tracking-tighter hover:text-accent transition-colors">
-TBD<span
-class="text-xs text-muted-foreground opacity-60 group-hover:opacity-100 transition-opacity">.ong</span>
-</a> -->
-
-<!-- ✅ OPTION 2: TBD>| Terminal (ACTIVE) -->
-<a href="/"
-class="text-xl font-bold font-mono tracking-tighter hover:text-accent transition-colors inline-flex items-center gap-[2px]">
-TBD<span class="text-accent/60">&gt;</span><span
-class="inline-block w-[2px] h-[1.1em] bg-accent animate-blink translate-y-[0.05em]"></span>
-</a>
-
-<!-- OPTION 3: [TBD] Brackets -->
-<!-- <a href="/" class="text-xl font-bold font-mono tracking-tighter hover:text-accent transition-colors">
-<span class="text-accent/60">[</span>TBD<span class="text-accent/60">]</span>
-</a> -->
-
-<!-- OPTION 3: TBD_ Underline -->
-<!-- <a href="/" class="text-xl font-bold font-mono tracking-tighter hover:text-accent transition-colors"> -->
-<!-- TBD<span class="text-accent">_</span> -->
-<!-- </a> -->
-
-<!-- OPTION 4: Plain TBD (Original) -->
-<!-- <a href="/" class="text-xl font-bold font-mono tracking-tighter hover:text-accent transition-colors"> -->
-<!-- TBD -->
-<!-- </a> -->
-<div class="flex items-center space-x-6 text-sm font-medium">
-{NAV_LINKS.map(link => {
-const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
-const isActive = link.href === "/"
-? pathname === "/"
-: pathname.startsWith(link.href)                                                                               ;
-
-return (
-<a href={link.href}
-class:list={[
-"transition-colors decoration-2 underline-offset-4",
-isActive
-? "text-accent underline decoration-wavy font-bold"
-: "text-muted-foreground hover:text-accent hover:underline hover:decoration-wavy"
-]}>
-{link.label}
-</a>
-)
-})}
-<button id="theme-toggle" class="hover:text-accent transition-colors cursor-pointer"
-aria-label="Toggle Theme">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-class="dark:hidden">
-<circle cx="12" cy="12" r="4" />
-<path d="M12 2v2" />
-<path d="M12 20v2" />
-<path d="m4.93 4.93 1.41 1.41" />
-<path d="m17.66 17.66 1.41 1.41" />
-<path d="M2 12h2" />
-<path d="M20 12h2" />
-<path d="m6.34 17.66-1.41 1.41" />
-<path d="m19.07 4.93-1.41 1.41" />
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-class="hidden dark:block">
-<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-</svg>
-</button>
-</div>
-</nav>
+                    return (
+                        <a
+                            href={link.href}
+                            class:list={[
+                                "transition-colors decoration-2 underline-offset-4",
+                                isActive
+                                    ? "text-accent underline decoration-wavy font-bold"
+                                    : "text-muted-foreground hover:text-accent hover:underline hover:decoration-wavy",
+                            ]}
+                        >
+                            {link.label}
+                        </a>
+                    );
+                })
+            }
+            <button
+                id="theme-toggle"
+                class="hover:text-accent transition-colors cursor-pointer"
+                aria-label="Toggle Theme"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="dark:hidden"
+                >
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="hidden dark:block"
+                >
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
 </header>
 
 <script>
-function attachThemeListener() {
-const toggle = document.getElementById("theme-toggle");
-if (toggle && !toggle.hasAttribute('data-listener-attached')) {
-toggle.addEventListener("click", () => {
-const element = document.documentElement                        ;
-const isDark = element.getAttribute('data-theme') === 'dark';
-const nextTheme = isDark ? 'light' : 'dark';
-element.setAttribute('data-theme', nextTheme)                   ;
-localStorage.setItem('theme', nextTheme)                        ;
-})                                                              ;
-toggle.setAttribute('data-listener-attached', 'true');
-}
-}
+    function attachThemeListener() {
+        const toggle = document.getElementById("theme-toggle");
+        if (toggle && !toggle.hasAttribute("data-listener-attached")) {
+            toggle.addEventListener("click", () => {
+                const element = document.documentElement;
+                const isDark = element.getAttribute("data-theme") === "dark";
+                const nextTheme = isDark ? "light" : "dark";
+                element.setAttribute("data-theme", nextTheme);
+                localStorage.setItem("theme", nextTheme);
+            });
+            toggle.setAttribute("data-listener-attached", "true");
+        }
+    }
 
-// Initialize on page load and after each navigation
-document.addEventListener("astro:page-load", attachThemeListener) ;
+    // Initialize on page load and after each navigation
+    document.addEventListener("astro:page-load", attachThemeListener);
 </script>

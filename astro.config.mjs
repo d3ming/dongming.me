@@ -7,7 +7,7 @@ import { remarkReadingTime } from "./src/utils/remark-reading-time.mjs";
 
 
 export default defineConfig({
-  site: "https://tbd.ong",
+  site: "https://dongming.me",
   trailingSlash: "never",
   markdown: {
     remarkPlugins: [remarkReadingTime],

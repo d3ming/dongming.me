@@ -3,7 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import "@pagefind/default-ui/css/ui.css";
 ---
 
-<Layout title="Search | TBD">
+<Layout title="Search | Dong Ming">
   <section class="py-12">
     <h1 class="text-3xl font-bold mb-8 tracking-tight italic">Search</h1>
 
@@ -21,7 +21,10 @@ import "@pagefind/default-ui/css/ui.css";
       // @ts-expect-error — Missing types for @pagefind/default-ui package.
       const { PagefindUI } = await import("@pagefind/default-ui");
 
-      if (import.meta.env.DEV && !pageFindSearch.querySelector(".pagefind-ui__search-input")) {
+      if (
+        import.meta.env.DEV &&
+        !pageFindSearch.querySelector(".pagefind-ui__search-input")
+      ) {
         pageFindSearch.innerHTML = `
             <div class="bg-muted p-4 border border-border rounded mb-8 font-mono text-sm">
               <p class="font-bold mb-2">DEV Mode Warning</p>
@@ -41,7 +44,9 @@ import "@pagefind/default-ui/css/ui.css";
       });
 
       // Auto-focus the search input
-      const searchInput = document.querySelector(".pagefind-ui__search-input") as HTMLInputElement;
+      const searchInput = document.querySelector(
+        ".pagefind-ui__search-input",
+      ) as HTMLInputElement;
       if (searchInput) {
         searchInput.focus();
       }

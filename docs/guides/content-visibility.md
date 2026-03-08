@@ -1,6 +1,6 @@
 # Content Visibility & Preview Guide
 
-This guide explains how to manage drafts and hidden content on `tbd.ong`.
+This guide explains how to manage drafts and hidden content on `dongming.me`.
 
 ## 1. The Draft Workflow
 
@@ -39,7 +39,7 @@ When the site is built for production (`make build`), posts with `draft: true` a
 
 Even if a post is a **Draft** or **Private**, Astro still generates a page for it at `/posts/[id]`. This is intentional.
 
-- **How it works**: You can share the URL (e.g., `tbd.ong/posts/my-private-post`) with someone. They can view the page, but nobody will find it by browsing the site or via search engines.
+- **How it works**: You can share the URL (e.g., `dongming.me/posts/my-private-post`) with someone. They can view the page, but nobody will find it by browsing the site or via search engines.
 - **Security**: This is "security by obscurity." It is not a password-protected private post. Anyone with the URL can view it.
 
 ---

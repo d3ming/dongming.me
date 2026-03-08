@@ -1,12 +1,12 @@
 export const SITE = {
-  website: "https://tbd.ong",
+  website: "https://dongming.me",
   author: "Dong Ming",
-  profile: "https://tbd.ong/about",
-  desc: "TBD - To Be Dong. Personal site of Dong Ming. Engineering crisp, fast, and opinionated systems.",
-  title: "TBD | Dong Ming",
+  profile: "https://dongming.me/about",
+  desc: "Personal site of Dong Ming. Engineering crisp, fast, and opinionated systems.",
+  title: "Dong Ming",
   ogImage: "avatar.jpg",
   lang: "en",
-  defaultTheme: "dark",
+  defaultTheme: "light",
 };
 
 export const NAV_LINKS = [

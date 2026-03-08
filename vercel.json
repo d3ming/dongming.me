@@ -4,7 +4,7 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://tbd.ong/$1",
+      "destination": "https://dongming.me/$1",
       "permanent": true,
       "has": [
         {
@@ -15,7 +15,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "https://tbd.ong/$1",
+      "destination": "https://dongming.me/$1",
       "permanent": true,
       "has": [
         {

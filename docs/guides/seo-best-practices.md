@@ -8,11 +8,11 @@ This guide outlines how to optimize your personal Astro blog for search engines 
 The `astro.config.mjs` is already configured with:
 ```javascript
 export default defineConfig({
-  site: "https://tbd.ong",
+  site: "https://dongming.me",
   integrations: [sitemap()],
 });
 ```
-- **Sitemap**: Automatically generated at `https://tbd.ong/sitemap-index.xml`. Submit this to [Google Search Console](https://search.google.com/search-console/about).
+- **Sitemap**: Automatically generated at `https://dongming.me/sitemap-index.xml`. Submit this to [Google Search Console](https://search.google.com/search-console/about).
 - **Robots.txt**: Ensure your `public/robots.txt` allows indexing of your posts.
 
 ### ✅ Open Graph & Twitter Tags

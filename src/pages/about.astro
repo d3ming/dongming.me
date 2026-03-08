@@ -4,31 +4,59 @@ import Socials from "@/components/Socials.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="About | TBD">
-<section class="py-12">
-<div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-12">
-<div class="w-32 h-32 rounded-2xl bg-accent/10 border-2 border-accent/20 flex items-center justify-center flex-shrink-0 rotate-3 hover:rotate-0 transition-all duration-500 overflow-hidden group">
-<img src="/avatar.jpg" alt="Dong Ming" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
-</div>
-<div class="flex-1 text-center sm:text-left">
-<h1 class="text-3xl font-bold mb-4 tracking-tight">
-Hi, I'm <a href="https://x.com/dming" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline decoration-accent/30 decoration-2 underline-offset-4">@dming</a>.
-</h1>
-<p class="text-lg text-muted-foreground mb-6 leading-relaxed">
-I'm a "retired?" software engineering manager who now spends his time managing 3 things: wealth, health and AI. I sometimes write about these topics too.
-</p>
-<Socials />
-</div>
-</div>
+<Layout title="About | Dong Ming">
+    <section class="py-12">
+        <div
+            class="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-12"
+        >
+            <div
+                class="w-32 h-32 rounded-2xl bg-accent/10 border-2 border-accent/20 flex items-center justify-center flex-shrink-0 rotate-3 hover:rotate-0 transition-all duration-500 overflow-hidden group"
+            >
+                <img
+                    src="/avatar.jpg"
+                    alt="Dong Ming"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                />
+            </div>
+            <div class="flex-1 text-center sm:text-left">
+                <h1 class="text-3xl font-bold mb-4 tracking-tight">
+                    Hi, I'm <a
+                        href="https://x.com/dming"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent hover:underline decoration-accent/30 decoration-2 underline-offset-4"
+                        >@dming</a
+                    >.
+                </h1>
+                <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
+                    I'm a "retired?" software engineering manager who now spends
+                    his time managing 3 things: wealth, health and AI. I
+                    sometimes write about these topics too.
+                </p>
+                <Socials />
+            </div>
+        </div>
 
-<Hr />
+        <Hr />
 
-<div class="mt-12">
-<h2 class="text-xl font-bold mb-4 uppercase tracking-wider text-foreground">Contact</h2>
-<p class="text-muted-foreground leading-relaxed">
-The best way to reach me is on <a href="https://x.com/dming" class="text-accent hover:underline underline-offset-4">X (@dming)</a> or
-<a href="https://www.linkedin.com/in/dongming/" class="text-accent hover:underline underline-offset-4">LinkedIn</a>.
-</p>
-</div>
-</section>
+        <div class="mt-12">
+            <h2
+                class="text-xl font-bold mb-4 uppercase tracking-wider text-foreground"
+            >
+                Contact
+            </h2>
+            <p class="text-muted-foreground leading-relaxed">
+                The best way to reach me is on <a
+                    href="https://x.com/dming"
+                    class="text-accent hover:underline underline-offset-4"
+                    >X (@dming)</a
+                > or
+                <a
+                    href="https://www.linkedin.com/in/dongming/"
+                    class="text-accent hover:underline underline-offset-4"
+                    >LinkedIn</a
+                >.
+            </p>
+        </div>
+    </section>
 </Layout>

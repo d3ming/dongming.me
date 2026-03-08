@@ -114,7 +114,7 @@ html[data-theme="light"] {
   header,
   section,
   footer {
-    @apply mx-auto w-full max-w-3xl px-6 sm:px-8;
+    @apply mx-auto w-full max-w-4xl px-6 sm:px-8;
   }
 
   h1,
