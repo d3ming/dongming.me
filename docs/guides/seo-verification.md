@@ -13,13 +13,13 @@ Every blog post now includes Article schema markup that helps Google understand 
   "@type": "BlogPosting",
   "headline": "Your Post Title",
   "description": "Your post description",
-  "image": "https://dongming.me/avatar.jpg",
+  "image": "https://www.dongming.me/avatar.jpg",
   "datePublished": "2026-01-07T20:00:00.000Z",
   "dateModified": "2026-01-07T20:00:00.000Z",
   "author": {
     "@type": "Person",
     "name": "Dong Ming",
-    "url": "https://dongming.me/about"
+    "url": "https://www.dongming.me/about"
   },
   "publisher": {
     "@type": "Person",
@@ -27,7 +27,7 @@ Every blog post now includes Article schema markup that helps Google understand 
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://dongming.me/posts/hello-world"
+    "@id": "https://www.dongming.me/posts/hello-world"
   }
 }
 ```
@@ -42,7 +42,7 @@ Every blog post now includes Article schema markup that helps Google understand 
 
 Every page automatically includes a canonical link tag:
 ```html
-<link rel="canonical" href="https://dongming.me/posts/hello-world" />
+<link rel="canonical" href="https://www.dongming.me/posts/hello-world" />
 ```
 
 **For migrated content**, you can override this in the post frontmatter:
@@ -67,7 +67,7 @@ Your avatar image is used as the default social preview.
 ### 4. Sitemap
 **Status:** ✅ Implemented
 
-Automatically generated at: `https://dongming.me/sitemap-index.xml`
+Automatically generated at: `https://www.dongming.me/sitemap-index.xml`
 
 **Action Required:** Submit this to [Google Search Console](https://search.google.com/search-console/about) once your site is live.
 

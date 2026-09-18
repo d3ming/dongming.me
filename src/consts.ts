@@ -1,7 +1,7 @@
 export const SITE = {
-  website: "https://dongming.me",
+  website: "https://www.dongming.me",
   author: "Dong Ming",
-  profile: "https://dongming.me/about",
+  profile: "https://www.dongming.me/about",
   desc: "Personal site of Dong Ming. Engineering crisp, fast, and opinionated systems.",
   title: "Dong Ming",
   ogImage: "avatar.jpg",
