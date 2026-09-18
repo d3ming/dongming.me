@@ -2,6 +2,10 @@
 
 Personal website and newsletter for Dong Ming. Built with a focus on high performance, minimal "leet coder" aesthetics, and engineering rigor.
 
+## License
+
+Code is MIT licensed; blog content under `src/content/` is CC BY 4.0. See [LICENSE](LICENSE) for details.
+
 ## Documentation
 
 - [**User Guide**](docs/USER_GUIDE.md): Learn how to write posts, manage drafts, and configure the site.
