@@ -12,6 +12,7 @@ export interface Props {
   showProgressBar?: boolean;
   searchable?: boolean;
   noIndex?: boolean;
+  twitterWidgets?: boolean;
 }
 
 const {
@@ -21,6 +22,7 @@ const {
   showProgressBar = false,
   searchable = true,
   noIndex = false,
+  twitterWidgets = false,
 } = Astro.props;
 ---
 
@@ -53,7 +55,9 @@ const {
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL("/avatar.jpg", Astro.url)} />
 <ClientRouter />
+{twitterWidgets && (
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+)}
 
 <script is:inline define:vars={{ defaultTheme: SITE.defaultTheme }}>
 const theme = (() => {
@@ -138,7 +142,6 @@ window.twttr.widgets.load()                 ;
 }
 })                                          ;
 
-console.log('%c [REF-MATCH] Progress Bar Active ', 'background: #A855F7; color: white;');
 })()                                                                                      ;
 </script>
 )}
