@@ -16,7 +16,8 @@
   - **Performance:** Fast by default. Minimal client-side JS.
 
 - **Workflow:**
-  - **Git:** DO NOT USE `git` commands unless explicitly asked to do so.
+  - **Git:** AI agents may use `git` to create branches and commit work. Open PRs
+  with `gh` for human review; never push to or commit directly on `main`.
   - **Testing:** Verify builds with `make build` after structural changes.
   - **SEO:** Ensure blog post frontmatter follows `docs/guides/seo-best-practices.md`.
   - **Commands:** Prefer `make` commands (e.g., `make dev`, `make lint`) over raw `npm` scripts.

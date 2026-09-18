@@ -20,6 +20,9 @@ const { post } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await render(post);
 const unlisted = isUnlistedPost(post);
 
+// Only load Twitter's widget script on posts that actually embed tweets.
+const twitterWidgets = /<Tweet[\s>]/.test(post.body ?? "");
+
 const articleUrl = new URL(`/posts/${post.id}`, Astro.site).href;
 const imageUrl = new URL(SITE.ogImage, Astro.site).href;
 
@@ -59,6 +62,7 @@ canonicalURL={post.data.canonicalURL}
 showProgressBar={true}
 searchable={!unlisted}
 noIndex={unlisted}
+twitterWidgets={twitterWidgets}
 >
 <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 <section class="py-12">
