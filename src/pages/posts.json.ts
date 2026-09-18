@@ -1,14 +1,15 @@
 import { getCollection } from "astro:content";
+import { isPublishedPost } from "@/utils/blog";
 
 export async function GET() {
   const allPosts = await getCollection("blog");
 
   const posts = allPosts
     .filter((post) => {
-      // PROD: Exclude private posts.
+      // PROD: Include only published posts.
       // DEV: Include everything.
       if (import.meta.env.DEV) return true;
-      return !post.data.private;
+      return isPublishedPost(post);
     })
     .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime())
     .map((post) => ({
@@ -22,8 +23,7 @@ export async function GET() {
         day: "numeric",
       }),
       tags: post.data.tags,
-      draft: post.data.draft || false,
-      private: post.data.private || false,
+      status: post.data.status,
     }));
 
   return new Response(JSON.stringify(posts), {

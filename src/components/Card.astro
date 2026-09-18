@@ -1,14 +1,15 @@
 ---
+import type { PostStatus } from "@/utils/blog";
+
 export interface Props {
   href: string;
   title: string;
   description: string;
   pubDate: Date;
-  draft?: boolean;
-  privatePost?: boolean;
+  status?: PostStatus;
 }
 
-const { href, title, description, pubDate, draft, privatePost } = Astro.props;
+const { href, title, description, pubDate, status } = Astro.props;
 
 const formattedDate = pubDate.toLocaleDateString("en-us", {
   year: "numeric",
@@ -24,16 +25,16 @@ const formattedDate = pubDate.toLocaleDateString("en-us", {
         class="text-base font-bold group-hover:text-accent transition-colors decoration-accent/30 decoration-2 underline-offset-4 group-hover:underline truncate flex-1 flex items-center gap-2"
       >
         {
-          draft && (
+          status === "draft" && (
             <span class="text-[10px] font-mono leading-none uppercase px-1.5 py-1 border border-red-500/30 text-red-500/70 rounded shrink-0">
               Draft
             </span>
           )
         }
         {
-          privatePost && (
+          status === "unlisted" && (
             <span class="text-[10px] font-mono leading-none uppercase px-1.5 py-1 border border-purple-500/30 text-purple-500/70 rounded shrink-0">
-              Secret
+              Unlisted
             </span>
           )
         }

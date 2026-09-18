@@ -8,7 +8,7 @@
             "description: \"$2\"",
             "pubDatetime: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
             "author: \"Dong Ming\"",
-            "draft: true",
+            "status: draft",
             "tags:",
             "  - ${3:others}",
             "---",

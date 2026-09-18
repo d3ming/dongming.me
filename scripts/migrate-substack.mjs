@@ -186,7 +186,7 @@ description: "${description.replace(/"/g, '\\"')}"
 pubDatetime: ${date}
 author: "Dong Ming"
 tags: ["substack", "mingdom-moment"]
-draft: true
+status: draft
 slug: "${slug}"
 canonicalURL: "${originalUrl}"
 ---

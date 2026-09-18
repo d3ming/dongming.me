@@ -2,12 +2,10 @@ import { getCollection } from "astro:content";
 import rss from "@astrojs/rss";
 import type { APIContext } from "astro";
 import { SITE } from "@/consts";
+import { isPublishedPost } from "@/utils/blog";
 
 export async function GET(context: APIContext) {
-  const posts = await getCollection(
-    "blog",
-    ({ data }) => !data.draft && !data.private,
-  );
+  const posts = await getCollection("blog", isPublishedPost);
   if (!context.site) {
     throw new Error("Site URL is not configured in astro.config.mjs");
   }

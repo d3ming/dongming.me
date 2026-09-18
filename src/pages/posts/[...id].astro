@@ -2,17 +2,14 @@
 import { getCollection, render } from "astro:content";
 import { SITE } from "@/consts";
 import Layout from "@/layouts/Layout.astro";
+import { isBuildVisiblePost, isUnlistedPost } from "@/utils/blog";
 
 export async function getStaticPaths() {
   const isDev = import.meta.env.DEV;
-  const posts = await getCollection("blog", ({ data }) => {
-    // In production, exclude drafts and private posts
-    if (!isDev) {
-      return !data.draft && !data.private;
-    }
-    // In dev, show everything
-    return true;
-  });
+  const posts = await getCollection(
+    "blog",
+    (post) => isDev || isBuildVisiblePost(post),
+  );
   return posts.map((post) => ({
     params: { id: post.id },
     props: { post },
@@ -21,6 +18,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await render(post);
+const unlisted = isUnlistedPost(post);
 
 const articleUrl = new URL(`/posts/${post.id}`, Astro.site).href;
 const imageUrl = new URL(SITE.ogImage, Astro.site).href;
@@ -59,6 +57,8 @@ title={`${post.data.title} | Dong Ming`}
 description={post.data.description}
 canonicalURL={post.data.canonicalURL}
 showProgressBar={true}
+searchable={!unlisted}
+noIndex={unlisted}
 >
 <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 <section class="py-12">

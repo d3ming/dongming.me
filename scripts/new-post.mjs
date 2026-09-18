@@ -58,7 +58,7 @@ title: "${title}"
 description: "TODO: Add a description"
 pubDatetime: ${isoString}
 author: "Dong Ming"
-draft: true
+status: draft
 tags:
   - others
 ---

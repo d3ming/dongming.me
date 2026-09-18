@@ -17,7 +17,9 @@ export default defineConfig({
     mdx({
       remarkPlugins: [remarkReadingTime],
     }),
-    sitemap()
+    sitemap({
+      filter: (page) => !page.includes("/posts/unlisted/"),
+    }),
   ],
   vite: {
     plugins: [tailwindcss()],

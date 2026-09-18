@@ -39,14 +39,14 @@ Write your post here using Markdown.
 
 ### Writing a Draft
 
-To create a draft that only appears in development but **not in production builds**:
+To create a draft that appears in development but **not in production builds**:
 
-1.  Add `draft: true` to the frontmatter:
+1.  Add `status: draft` to the frontmatter:
 
 ```yaml
 ---
-title: "Secret WIP Post"
-draft: true
+title: "WIP Post"
+status: draft
 ...
 ---
 ```
@@ -55,7 +55,7 @@ draft: true
 
 ### Publishing an Entry
 
-1.  Remove `draft: true` (or set it to `false`).
+1.  Change `status: draft` to `status: published`.
 2.  Ensure `pubDatetime` is set to your desired publication time.
 3.  Commit and push your changes.
 

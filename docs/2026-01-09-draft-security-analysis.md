@@ -1,4 +1,10 @@
 # Draft Post Security Analysis & Fix
+
+> Historical record of the January 2026 boolean-field incident. The current
+> implementation uses `status: draft`, `status: published`, and
+> `status: unlisted`; see the [current content visibility guide](guides/content-visibility.md)
+> for the behavior enforced by the production build.
+
 **Date:** 2026-01-09
 **Issue:** Draft posts were being published to production
 **Severity:** HIGH - Confidential draft content exposed publicly

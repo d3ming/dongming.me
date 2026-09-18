@@ -183,7 +183,7 @@ async function importBeehiiv() {
             `description: "${description.replace(/"/g, '\\"')}"`,
             `pubDatetime: ${pubDatetime}`,
             `author: "Dong Ming"`,
-            `draft: true`,
+            `status: draft`,
         ];
 
         if (heroImage) {

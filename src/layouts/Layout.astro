@@ -10,6 +10,8 @@ export interface Props {
   description?: string;
   canonicalURL?: string;
   showProgressBar?: boolean;
+  searchable?: boolean;
+  noIndex?: boolean;
 }
 
 const {
@@ -17,6 +19,8 @@ const {
   description = "Personal site of Dong Ming",
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
   showProgressBar = false,
+  searchable = true,
+  noIndex = false,
 } = Astro.props;
 ---
 
@@ -33,6 +37,7 @@ const {
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalURL} />
+{noIndex && <meta name="robots" content="noindex,nofollow" />}
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -138,7 +143,7 @@ console.log('%c [REF-MATCH] Progress Bar Active ', 'background: #A855F7; color: 
 </script>
 )}
 <Header />
-<main class="flex-grow">
+<main class="flex-grow" data-pagefind-body={searchable ? "" : undefined}>
 <slot />
 </main>
 <Footer />

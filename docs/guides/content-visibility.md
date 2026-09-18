@@ -1,63 +1,33 @@
 # Content Visibility & Preview Guide
 
-This guide explains how to manage drafts and hidden content on `dongming.me`.
-
-## 1. The Draft Workflow
-
-We use a `draft` flag in the Frontmatter of blog posts to control visibility.
+Posts use one explicit `status` field in their frontmatter:
 
 ```yaml
----
-title: "My Secret Post"
-pubDatetime: 2026-01-09T18:00:00Z
-draft: true
----
+status: draft # draft, published, or unlisted
 ```
 
-### 🛠 Local Development (Previewing)
-When you run `make dev`, **all posts** (including those marked `draft: true`) are visible in the [Posts list](/posts). This allows you to proofread and verify layout before publishing.
+The build and every discovery surface use the same status rules:
 
-### 🌐 Production (Public Site)
-When the site is built for production (`make build`), posts with `draft: true` are:
-1.  **Excluded** from the Posts list.
-2.  **Excluded** from the RSS feed.
-3.  **Excluded** from the XML sitemap.
-
----
-
-## 2. Status Definitions
-
-| Status | Frontmatter | Logic | Use Case |
+| Status | Local development | Production page | Lists, search, RSS, sitemap |
 | :--- | :--- | :--- | :--- |
-| **Published** | Default | Shown everywhere. | General public content. |
-| **Private** | `private: true` | Hidden from lists in Prod. Direct link works. | Content for a limited audience (friends, colleagues). Finished but not for everyone. |
-| **Draft** | `draft: true` | Hidden from lists in Prod. Direct link works. | Works in progress. Not finished. |
+| `published` | Visible | Generated | Included |
+| `draft` | Visible | Not generated | Excluded |
+| `unlisted` | Visible | Generated at its direct URL | Excluded |
 
----
+`unlisted` is useful when a finished post should be shareable by URL without
+appearing in the site's navigation, search index, RSS feed, or sitemap. It is
+not access control: anyone who has the URL can read it, and the source is in
+the public repository. Unlisted pages send `noindex,nofollow` to crawlers.
 
-## 3. "Shadow Publishing" (Sharing Previews)
+Unlisted posts live under `src/content/blog/unlisted/`, which gives them a
+clear route such as `/posts/unlisted/2021-02-14-cryto-thoughts`. This directory
+also lets the sitemap configuration exclude the whole class of pages safely.
 
-Even if a post is a **Draft** or **Private**, Astro still generates a page for it at `/posts/[id]`. This is intentional.
+During `make dev`, the Posts page includes all three statuses. Type `draft` or
+`unlisted` into its search field to inspect those subsets. During `make build`,
+only published posts appear in the public list and search JSON. The build also
+verifies that draft pages are absent, unlisted pages are direct-link only, and
+unlisted pages are not indexed by Pagefind or the sitemap.
 
-- **How it works**: You can share the URL (e.g., `dongming.me/posts/my-private-post`) with someone. They can view the page, but nobody will find it by browsing the site or via search engines.
-- **Security**: This is "security by obscurity." It is not a password-protected private post. Anyone with the URL can view it.
-
----
-
-## 4. Local Development (Previewing)
-
-When you run `make dev`, your `/posts` page is enhanced to show three distinct sections:
-1.  **Posts**: Only truly published content.
-2.  **Private (Dev Only)**: Posts marked `private: true`. Rendered with lower opacity to distinguish.
-3.  **Drafts (Dev Only)**: Posts marked `draft: true`. Rendered with the lowest opacity.
-
----
-
-## 5. How to Fully Publish
-
-When you are ready to take a post live:
-
-1.  Set `draft: false` and `private: false` (or remove the lines).
-2.  Ensure `pubDatetime` is correct for sorting.
-3.  Run `make lint` to ensure the filename matches the date.
-4.  Commit and push to trigger the deployment.
+To publish a post, change its frontmatter to `status: published`, then run
+`make build` before committing and pushing.

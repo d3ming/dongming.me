@@ -96,7 +96,7 @@ Posts marked as drafts are automatically skipped:
 ---
 title: "Work in Progress"
 description: "Not ready yet"
-draft: true  # This post won't be linted
+status: draft  # This post won't be linted
 ---
 ```
 

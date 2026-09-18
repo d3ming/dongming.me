@@ -109,7 +109,7 @@ async function lintContent() {
             }
 
             // Skip drafts
-            if (data.draft === true) {
+            if (data.status === "draft") {
                 console.log(`⏭️  [${postId}]: Skipping draft\n`);
                 continue;
             }

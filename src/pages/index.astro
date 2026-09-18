@@ -4,16 +4,17 @@ import Card from "@/components/Card.astro";
 import Hr from "@/components/Hr.astro";
 import Socials from "@/components/Socials.astro";
 import Layout from "@/layouts/Layout.astro";
+import { isPublishedPost } from "@/utils/blog";
 
 const posts = await getCollection("blog");
 const latestPosts = posts
-  .filter((p) => !p.data.draft && !p.data.private)
+  .filter(isPublishedPost)
   .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime())
   .slice(0, 3);
 
 // Pinned posts from the blog collection
 const pinnedPosts = posts
-  .filter((p) => p.data.pinned && !p.data.draft && !p.data.private)
+  .filter((p) => p.data.pinned && isPublishedPost(p))
   .sort((a, b) => b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime())
   .map((p) => ({
     title: p.data.title,
