@@ -16,8 +16,12 @@
   - **Performance:** Fast by default. Minimal client-side JS.
 
 - **Workflow:**
-  - **Git:** AI agents may use `git` to create branches and commit work. Open PRs
-  with `gh` for human review; never push to or commit directly on `main`.
+  - **Git:** AI agents may use `git` to create branches and commit work. Small,
+    verified changes may be pushed straight to `main`: verify first with
+    `make build`, `make lint`, and the SEO checks, plus a look at the Vercel
+    preview deployment when one exists. Open a PR with `gh` for human review
+    when the change is risky, touches redirects/headers, or the owner asked to
+    review first.
   - **Testing:** Verify builds with `make build` after structural changes.
   - **SEO:** Ensure blog post frontmatter follows `docs/guides/seo-best-practices.md`.
   - **Commands:** Prefer `make` commands (e.g., `make dev`, `make lint`) over raw `npm` scripts.
